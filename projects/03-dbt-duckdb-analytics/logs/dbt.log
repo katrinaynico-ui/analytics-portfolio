@@ -1,0 +1,2123 @@
+[0m21:35:48.045630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b47fac050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b4abb6ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b4725bc50>]}
+
+
+============================== 21:35:48.048506 | 51504082-8b80-4ecd-b5c3-e411b2c176ac ==============================
+[0m21:35:48.048506 [info ] [MainThread]: Running with dbt=1.9.11
+[0m21:35:48.048898 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'warn_error': 'None', 'printer_width': '80', 'log_format': 'default', 'debug': 'False', 'invocation_command': 'dbt deps --profiles-dir . --project-dir .', 'use_colors': 'True', 'partial_parse': 'True', 'log_path': 'logs', 'static_parser': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'empty': 'None', 'fail_fast': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'profiles_dir': '.', 'log_cache_events': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:35:48.049152 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m21:35:48.049382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '51504082-8b80-4ecd-b5c3-e411b2c176ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b472ebce0>]}
+[0m21:35:48.140710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '51504082-8b80-4ecd-b5c3-e411b2c176ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b47317020>]}
+[0m21:35:48.153683 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:35:48.154358 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:35:48.155787 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.15473533, "process_in_blocks": "2464", "process_kernel_time": 0.10749, "process_mem_max_rss": "97320", "process_out_blocks": "16", "process_user_time": 1.086744}
+[0m21:35:48.156185 [debug] [MainThread]: Command `dbt deps` succeeded at 21:35:48.156105 after 0.16 seconds
+[0m21:35:48.156476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b4749f550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b471c9750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b4748f5c0>]}
+[0m21:35:48.156769 [debug] [MainThread]: Flushing usage events
+[0m21:35:48.519263 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:35:49.785166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a4430050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a7062ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a36dfc50>]}
+
+
+============================== 21:35:49.788162 | 546226f8-fe3c-43a8-9bd5-d34d65336e44 ==============================
+[0m21:35:49.788162 [info ] [MainThread]: Running with dbt=1.9.11
+[0m21:35:49.788561 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'target_path': 'None', 'partial_parse': 'True', 'log_path': 'logs', 'use_colors': 'True', 'no_print': 'None', 'warn_error': 'None', 'printer_width': '80', 'fail_fast': 'False', 'write_json': 'True', 'empty': 'None', 'profiles_dir': '.', 'log_format': 'default', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt debug --profiles-dir . --project-dir .', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'debug': 'False'}
+[0m21:35:49.788826 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m21:35:49.789058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '546226f8-fe3c-43a8-9bd5-d34d65336e44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a396fce0>]}
+[0m21:35:49.795263 [info ] [MainThread]: dbt version: 1.9.11
+[0m21:35:49.795579 [info ] [MainThread]: python version: 3.13.5
+[0m21:35:49.795783 [info ] [MainThread]: python path: /workspace/career-ds-os/projects/03-dbt-duckdb-analytics/.venv/bin/python3
+[0m21:35:49.795966 [info ] [MainThread]: os info: Linux-6.12.94+-x86_64-with-glibc2.41
+[0m21:35:49.891410 [info ] [MainThread]: Using profiles dir at .
+[0m21:35:49.891853 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m21:35:49.892070 [info ] [MainThread]: Using dbt_project.yml file at ./dbt_project.yml
+[0m21:35:49.893091 [info ] [MainThread]: adapter type: duckdb
+[0m21:35:49.893335 [info ] [MainThread]: adapter version: 1.9.6
+[0m21:35:49.974561 [info ] [MainThread]: Configuration:
+[0m21:35:49.975005 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:35:49.975207 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:35:49.975392 [info ] [MainThread]: Required dependencies:
+[0m21:35:49.975605 [debug] [MainThread]: Executing "git --help"
+[0m21:35:49.977509 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:35:49.977911 [debug] [MainThread]: STDERR: "b''"
+[0m21:35:49.978125 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:35:49.978334 [info ] [MainThread]: Connection:
+[0m21:35:49.978541 [info ] [MainThread]:   database: analytics
+[0m21:35:49.978723 [info ] [MainThread]:   schema: main
+[0m21:35:49.978900 [info ] [MainThread]:   path: data/warehouse/analytics.duckdb
+[0m21:35:49.979086 [info ] [MainThread]:   config_options: None
+[0m21:35:49.979265 [info ] [MainThread]:   extensions: None
+[0m21:35:49.979433 [info ] [MainThread]:   settings: {}
+[0m21:35:49.979600 [info ] [MainThread]:   external_root: .
+[0m21:35:49.979759 [info ] [MainThread]:   use_credential_provider: None
+[0m21:35:49.979924 [info ] [MainThread]:   attach: None
+[0m21:35:49.980086 [info ] [MainThread]:   filesystems: None
+[0m21:35:49.980243 [info ] [MainThread]:   remote: None
+[0m21:35:49.980397 [info ] [MainThread]:   plugins: None
+[0m21:35:49.980552 [info ] [MainThread]:   disable_transactions: False
+[0m21:35:49.980877 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m21:35:50.019186 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m21:35:50.035038 [debug] [MainThread]: Using duckdb connection "debug"
+[0m21:35:50.035388 [debug] [MainThread]: On debug: select 1 as id
+[0m21:35:50.035605 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:35:50.046338 [debug] [MainThread]: SQL status: OK in 0.011 seconds
+[0m21:35:50.047139 [debug] [MainThread]: On debug: Close
+[0m21:35:50.047434 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:35:50.047662 [info ] [MainThread]: [32mAll checks passed![0m
+[0m21:35:50.048393 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.30350038, "process_in_blocks": "400", "process_kernel_time": 0.107642, "process_mem_max_rss": "139944", "process_out_blocks": "16", "process_user_time": 1.227914}
+[0m21:35:50.048778 [debug] [MainThread]: Command `dbt debug` succeeded at 21:35:50.048706 after 0.30 seconds
+[0m21:35:50.049010 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:35:50.049259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a366caf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a366cf30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f259b454950>]}
+[0m21:35:50.049529 [debug] [MainThread]: Flushing usage events
+[0m21:35:50.346072 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:35:51.681644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e38778050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e3b37aad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e37a5fc50>]}
+
+
+============================== 21:35:51.684821 | ed581496-1cb3-4b9f-8ff9-16c5c93d9331 ==============================
+[0m21:35:51.684821 [info ] [MainThread]: Running with dbt=1.9.11
+[0m21:35:51.685231 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'fail_fast': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'version_check': 'True', 'cache_selected_only': 'False', 'log_path': 'logs', 'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir . --project-dir .', 'profiles_dir': '.', 'introspect': 'True', 'warn_error': 'None', 'static_parser': 'True', 'quiet': 'False', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'write_json': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'partial_parse': 'True'}
+[0m21:35:51.685556 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m21:35:51.685899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e37ae7ce0>]}
+[0m21:35:51.873821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e37952250>]}
+[0m21:35:51.923925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e37995550>]}
+[0m21:35:51.925453 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m21:35:51.980834 [debug] [MainThread]: checksum: 2191bf62271fd478cf28c21ce953ef202bc2236227e4db3dd4cef6b50a0a91d4, vars: {}, profile: , target: , version: 1.9.11
+[0m21:35:51.981586 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:35:51.981906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2f958320>]}
+[0m21:35:52.991170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2fa6e0b0>]}
+[0m21:35:53.054253 [debug] [MainThread]: Wrote artifact WritableManifest to ./target/manifest.json
+[0m21:35:53.055799 [debug] [MainThread]: Wrote artifact SemanticManifest to ./target/semantic_manifest.json
+[0m21:35:53.066694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2f8a7110>]}
+[0m21:35:53.067109 [info ] [MainThread]: Found 7 models, 26 data tests, 2 sources, 473 macros
+[0m21:35:53.067366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2d8a1e50>]}
+[0m21:35:53.069218 [info ] [MainThread]: 
+[0m21:35:53.069524 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:35:53.069765 [info ] [MainThread]: 
+[0m21:35:53.070169 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:35:53.074405 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m21:35:53.085563 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m21:35:53.089325 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m21:35:53.107269 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m21:35:53.107738 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m21:35:53.108201 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"analytics"'
+    
+  
+  
+[0m21:35:53.108573 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m21:35:53.109014 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"analytics"'
+    
+  
+  
+[0m21:35:53.109341 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:35:53.109643 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"analytics"'
+    
+  
+  
+[0m21:35:53.110039 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:35:53.110468 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:35:53.122513 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m21:35:53.122987 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m21:35:53.124192 [debug] [ThreadPool]: On list_analytics: Close
+[0m21:35:53.125485 [debug] [ThreadPool]: On list_analytics: Close
+[0m21:35:53.126338 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m21:35:53.127321 [debug] [ThreadPool]: On list_analytics: Close
+[0m21:35:53.127977 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_marts)
+[0m21:35:53.128467 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_intermediate)
+[0m21:35:53.128998 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "marts"
+"
+[0m21:35:53.129420 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_staging)
+[0m21:35:53.129885 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "intermediate"
+"
+[0m21:35:53.135087 [debug] [ThreadPool]: Using duckdb connection "create_analytics_marts"
+[0m21:35:53.135640 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "staging"
+"
+[0m21:35:53.137841 [debug] [ThreadPool]: Using duckdb connection "create_analytics_intermediate"
+[0m21:35:53.138474 [debug] [ThreadPool]: On create_analytics_marts: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "create_analytics_marts"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='analytics'
+        and type='sqlite'
+    
+  
+[0m21:35:53.139885 [debug] [ThreadPool]: Using duckdb connection "create_analytics_staging"
+[0m21:35:53.140256 [debug] [ThreadPool]: On create_analytics_intermediate: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "create_analytics_intermediate"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='analytics'
+        and type='sqlite'
+    
+  
+[0m21:35:53.140595 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:35:53.140903 [debug] [ThreadPool]: On create_analytics_staging: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "create_analytics_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='analytics'
+        and type='sqlite'
+    
+  
+[0m21:35:53.141203 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:35:53.141636 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:35:53.142485 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.142936 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:35:53.144065 [debug] [ThreadPool]: Using duckdb connection "create_analytics_marts"
+[0m21:35:53.144344 [debug] [ThreadPool]: On create_analytics_marts: BEGIN
+[0m21:35:53.145327 [debug] [ThreadPool]: Using duckdb connection "create_analytics_staging"
+[0m21:35:53.145598 [debug] [ThreadPool]: On create_analytics_staging: BEGIN
+[0m21:35:53.145964 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m21:35:53.146374 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.146822 [debug] [ThreadPool]: Using duckdb connection "create_analytics_marts"
+[0m21:35:53.147035 [debug] [ThreadPool]: On create_analytics_marts: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "create_analytics_marts"} */
+
+    
+    
+        create schema if not exists "analytics"."marts"
+    
+[0m21:35:53.148069 [debug] [ThreadPool]: Using duckdb connection "create_analytics_intermediate"
+[0m21:35:53.148457 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.148772 [debug] [ThreadPool]: On create_analytics_intermediate: BEGIN
+[0m21:35:53.149106 [debug] [ThreadPool]: Using duckdb connection "create_analytics_staging"
+[0m21:35:53.149450 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.149888 [debug] [ThreadPool]: On create_analytics_staging: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "create_analytics_staging"} */
+
+    
+    
+        create schema if not exists "analytics"."staging"
+    
+[0m21:35:53.150637 [debug] [ThreadPool]: On create_analytics_marts: COMMIT
+[0m21:35:53.151061 [debug] [ThreadPool]: Using duckdb connection "create_analytics_marts"
+[0m21:35:53.151386 [debug] [ThreadPool]: On create_analytics_marts: COMMIT
+[0m21:35:53.151806 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.152162 [debug] [ThreadPool]: Using duckdb connection "create_analytics_intermediate"
+[0m21:35:53.152512 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.152838 [debug] [ThreadPool]: On create_analytics_intermediate: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "create_analytics_intermediate"} */
+
+    
+    
+        create schema if not exists "analytics"."intermediate"
+    
+[0m21:35:53.153705 [debug] [ThreadPool]: On create_analytics_staging: COMMIT
+[0m21:35:53.154116 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.154669 [debug] [ThreadPool]: Using duckdb connection "create_analytics_staging"
+[0m21:35:53.155020 [debug] [ThreadPool]: On create_analytics_marts: Close
+[0m21:35:53.155396 [debug] [ThreadPool]: On create_analytics_staging: COMMIT
+[0m21:35:53.155681 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:35:53.156986 [debug] [ThreadPool]: On create_analytics_intermediate: COMMIT
+[0m21:35:53.157288 [debug] [ThreadPool]: Using duckdb connection "create_analytics_intermediate"
+[0m21:35:53.157554 [debug] [ThreadPool]: On create_analytics_intermediate: COMMIT
+[0m21:35:53.157965 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.158242 [debug] [ThreadPool]: On create_analytics_staging: Close
+[0m21:35:53.159257 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:35:53.159594 [debug] [ThreadPool]: On create_analytics_intermediate: Close
+[0m21:35:53.161217 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_analytics_intermediate, now list_analytics_marts)
+[0m21:35:53.165698 [debug] [ThreadPool]: Using duckdb connection "list_analytics_marts"
+[0m21:35:53.166244 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_analytics_marts, now list_analytics_intermediate)
+[0m21:35:53.166563 [debug] [ThreadPool]: On list_analytics_marts: BEGIN
+[0m21:35:53.167116 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_analytics_staging, now list_analytics_staging)
+[0m21:35:53.168876 [debug] [ThreadPool]: Using duckdb connection "list_analytics_intermediate"
+[0m21:35:53.169239 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:35:53.170540 [debug] [ThreadPool]: Using duckdb connection "list_analytics_staging"
+[0m21:35:53.170926 [debug] [ThreadPool]: On list_analytics_intermediate: BEGIN
+[0m21:35:53.171549 [debug] [ThreadPool]: On list_analytics_staging: BEGIN
+[0m21:35:53.171934 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m21:35:53.172375 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:35:53.172749 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:35:53.173065 [debug] [ThreadPool]: Using duckdb connection "list_analytics_marts"
+[0m21:35:53.173747 [debug] [ThreadPool]: On list_analytics_marts: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics_marts"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'marts'
+    and lower(table_catalog) = 'analytics'
+  
+[0m21:35:53.174224 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.174593 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.174995 [debug] [ThreadPool]: Using duckdb connection "list_analytics_intermediate"
+[0m21:35:53.175312 [debug] [ThreadPool]: Using duckdb connection "list_analytics_staging"
+[0m21:35:53.175707 [debug] [ThreadPool]: On list_analytics_intermediate: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics_intermediate"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'intermediate'
+    and lower(table_catalog) = 'analytics'
+  
+[0m21:35:53.176027 [debug] [ThreadPool]: On list_analytics_staging: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics_staging"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'staging'
+    and lower(table_catalog) = 'analytics'
+  
+[0m21:35:53.177366 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m21:35:53.178527 [debug] [ThreadPool]: On list_analytics_marts: ROLLBACK
+[0m21:35:53.178974 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:53.179351 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m21:35:53.180389 [debug] [ThreadPool]: On list_analytics_intermediate: ROLLBACK
+[0m21:35:53.181487 [debug] [ThreadPool]: On list_analytics_staging: ROLLBACK
+[0m21:35:53.182220 [debug] [ThreadPool]: Failed to rollback 'list_analytics_marts'
+[0m21:35:53.183035 [debug] [ThreadPool]: Failed to rollback 'list_analytics_staging'
+[0m21:35:53.183575 [debug] [ThreadPool]: Failed to rollback 'list_analytics_intermediate'
+[0m21:35:53.183933 [debug] [ThreadPool]: On list_analytics_marts: Close
+[0m21:35:53.184343 [debug] [ThreadPool]: On list_analytics_staging: Close
+[0m21:35:53.184706 [debug] [ThreadPool]: On list_analytics_intermediate: Close
+[0m21:35:53.185925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2d791f40>]}
+[0m21:35:53.186308 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:35:53.186509 [debug] [MainThread]: On master: BEGIN
+[0m21:35:53.186682 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:35:53.187171 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:35:53.187407 [debug] [MainThread]: On master: COMMIT
+[0m21:35:53.187610 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:35:53.187792 [debug] [MainThread]: On master: COMMIT
+[0m21:35:53.188111 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:35:53.188311 [debug] [MainThread]: On master: Close
+[0m21:35:53.190550 [debug] [Thread-1 (]: Began running node model.retail_analytics.stg_transactions
+[0m21:35:53.191027 [info ] [Thread-1 (]: 1 of 7 START sql view model staging.stg_transactions ........................... [RUN]
+[0m21:35:53.191380 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_analytics_staging, now model.retail_analytics.stg_transactions)
+[0m21:35:53.191636 [debug] [Thread-1 (]: Began compiling node model.retail_analytics.stg_transactions
+[0m21:35:53.197223 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_analytics.stg_transactions"
+[0m21:35:53.197854 [debug] [Thread-1 (]: Began executing node model.retail_analytics.stg_transactions
+[0m21:35:53.220908 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_analytics.stg_transactions"
+[0m21:35:53.221601 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.stg_transactions"
+[0m21:35:53.221917 [debug] [Thread-1 (]: On model.retail_analytics.stg_transactions: BEGIN
+[0m21:35:53.222143 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:53.223028 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:35:53.223414 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.stg_transactions"
+[0m21:35:53.223791 [debug] [Thread-1 (]: On model.retail_analytics.stg_transactions: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.stg_transactions"} */
+
+  
+  create view "analytics"."staging"."stg_transactions__dbt_tmp" as (
+    -- Staging: normalize column names + types from the warehouse seed.
+with source as (
+    select * from "analytics"."raw"."transactions_clean"
+),
+
+renamed as (
+    select
+        cast(InvoiceNo as varchar) as invoice_id,
+        cast(StockCode as varchar) as stock_code,
+        cast(Description as varchar) as description,
+        cast(Quantity as integer) as quantity,
+        cast(InvoiceDate as timestamp) as invoice_ts,
+        cast(InvoiceDate as date) as invoice_date,
+        cast(UnitPrice as double) as unit_price,
+        cast(CustomerID as integer) as customer_id,
+        cast(Country as varchar) as country,
+        cast(line_revenue as double) as line_revenue
+    from source
+)
+
+select * from renamed
+  );
+
+[0m21:35:53.224907 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:35:53.229500 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.stg_transactions"
+[0m21:35:53.229824 [debug] [Thread-1 (]: On model.retail_analytics.stg_transactions: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.stg_transactions"} */
+alter view "analytics"."staging"."stg_transactions__dbt_tmp" rename to "stg_transactions"
+[0m21:35:53.230446 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:35:53.239273 [debug] [Thread-1 (]: On model.retail_analytics.stg_transactions: COMMIT
+[0m21:35:53.239585 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.stg_transactions"
+[0m21:35:53.239819 [debug] [Thread-1 (]: On model.retail_analytics.stg_transactions: COMMIT
+[0m21:35:53.240977 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:35:53.245012 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.stg_transactions"
+[0m21:35:53.245326 [debug] [Thread-1 (]: On model.retail_analytics.stg_transactions: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.stg_transactions"} */
+
+      drop view if exists "analytics"."staging"."stg_transactions__dbt_backup" cascade
+    
+[0m21:35:53.245974 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:35:53.247911 [debug] [Thread-1 (]: On model.retail_analytics.stg_transactions: Close
+[0m21:35:53.249306 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e384b05f0>]}
+[0m21:35:53.250069 [info ] [Thread-1 (]: 1 of 7 OK created sql view model staging.stg_transactions ...................... [[32mOK[0m in 0.06s]
+[0m21:35:53.250686 [debug] [Thread-1 (]: Finished running node model.retail_analytics.stg_transactions
+[0m21:35:53.251722 [debug] [Thread-2 (]: Began running node model.retail_analytics.int_orders
+[0m21:35:53.252180 [info ] [Thread-2 (]: 2 of 7 START sql view model intermediate.int_orders ............................ [RUN]
+[0m21:35:53.252550 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_analytics_marts, now model.retail_analytics.int_orders)
+[0m21:35:53.252796 [debug] [Thread-2 (]: Began compiling node model.retail_analytics.int_orders
+[0m21:35:53.255334 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail_analytics.int_orders"
+[0m21:35:53.255860 [debug] [Thread-2 (]: Began executing node model.retail_analytics.int_orders
+[0m21:35:53.257763 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail_analytics.int_orders"
+[0m21:35:53.258251 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.int_orders"
+[0m21:35:53.258492 [debug] [Thread-2 (]: On model.retail_analytics.int_orders: BEGIN
+[0m21:35:53.258691 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:53.259213 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:35:53.259445 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.int_orders"
+[0m21:35:53.259648 [debug] [Thread-2 (]: On model.retail_analytics.int_orders: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.int_orders"} */
+
+  
+  create view "analytics"."intermediate"."int_orders__dbt_tmp" as (
+    -- Order grain: one row per invoice (order).
+with lines as (
+    select * from "analytics"."staging"."stg_transactions"
+),
+
+orders as (
+    select
+        invoice_id,
+        customer_id,
+        min(invoice_ts) as order_ts,
+        min(invoice_date) as order_date,
+        max(country) as country,
+        count(*) as n_lines,
+        sum(quantity) as n_items,
+        count(distinct stock_code) as n_products,
+        round(sum(line_revenue), 2) as order_revenue
+    from lines
+    group by 1, 2
+)
+
+select * from orders
+  );
+
+[0m21:35:53.260824 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:35:53.262833 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.int_orders"
+[0m21:35:53.263151 [debug] [Thread-2 (]: On model.retail_analytics.int_orders: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.int_orders"} */
+alter view "analytics"."intermediate"."int_orders__dbt_tmp" rename to "int_orders"
+[0m21:35:53.263732 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:35:53.264686 [debug] [Thread-2 (]: On model.retail_analytics.int_orders: COMMIT
+[0m21:35:53.264984 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.int_orders"
+[0m21:35:53.265202 [debug] [Thread-2 (]: On model.retail_analytics.int_orders: COMMIT
+[0m21:35:53.266612 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:35:53.272586 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.int_orders"
+[0m21:35:53.272946 [debug] [Thread-2 (]: On model.retail_analytics.int_orders: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.int_orders"} */
+
+      drop view if exists "analytics"."intermediate"."int_orders__dbt_backup" cascade
+    
+[0m21:35:53.273491 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:35:53.274556 [debug] [Thread-2 (]: On model.retail_analytics.int_orders: Close
+[0m21:35:53.275027 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2c4554d0>]}
+[0m21:35:53.275488 [info ] [Thread-2 (]: 2 of 7 OK created sql view model intermediate.int_orders ....................... [[32mOK[0m in 0.02s]
+[0m21:35:53.275861 [debug] [Thread-2 (]: Finished running node model.retail_analytics.int_orders
+[0m21:35:53.276921 [debug] [Thread-4 (]: Began running node model.retail_analytics.int_customer_order_stats
+[0m21:35:53.277380 [debug] [Thread-3 (]: Began running node model.retail_analytics.fct_orders
+[0m21:35:53.277886 [info ] [Thread-4 (]: 4 of 7 START sql view model intermediate.int_customer_order_stats .............. [RUN]
+[0m21:35:53.278406 [info ] [Thread-3 (]: 3 of 7 START sql table model marts.fct_orders .................................. [RUN]
+[0m21:35:53.279003 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.retail_analytics.int_customer_order_stats'
+[0m21:35:53.279459 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_analytics_intermediate, now model.retail_analytics.fct_orders)
+[0m21:35:53.279823 [debug] [Thread-4 (]: Began compiling node model.retail_analytics.int_customer_order_stats
+[0m21:35:53.280139 [debug] [Thread-3 (]: Began compiling node model.retail_analytics.fct_orders
+[0m21:35:53.282213 [debug] [Thread-4 (]: Writing injected SQL for node "model.retail_analytics.int_customer_order_stats"
+[0m21:35:53.284300 [debug] [Thread-3 (]: Writing injected SQL for node "model.retail_analytics.fct_orders"
+[0m21:35:53.284912 [debug] [Thread-4 (]: Began executing node model.retail_analytics.int_customer_order_stats
+[0m21:35:53.287251 [debug] [Thread-4 (]: Writing runtime sql for node "model.retail_analytics.int_customer_order_stats"
+[0m21:35:53.287782 [debug] [Thread-3 (]: Began executing node model.retail_analytics.fct_orders
+[0m21:35:53.288216 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.int_customer_order_stats"
+[0m21:35:53.298855 [debug] [Thread-4 (]: On model.retail_analytics.int_customer_order_stats: BEGIN
+[0m21:35:53.299161 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:35:53.304345 [debug] [Thread-3 (]: Writing runtime sql for node "model.retail_analytics.fct_orders"
+[0m21:35:53.304896 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m21:35:53.305239 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.int_customer_order_stats"
+[0m21:35:53.305505 [debug] [Thread-4 (]: On model.retail_analytics.int_customer_order_stats: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.int_customer_order_stats"} */
+
+  
+  create view "analytics"."intermediate"."int_customer_order_stats__dbt_tmp" as (
+    -- Per-customer order aggregates used by dim_customers / RFM.
+with orders as (
+    select * from "analytics"."intermediate"."int_orders"
+),
+
+stats as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as last_order_date,
+        count(*) as frequency,
+        round(sum(order_revenue), 2) as monetary,
+        round(avg(order_revenue), 2) as avg_order_value,
+        sum(n_items) as n_items,
+        sum(n_products) as n_product_lines
+    from orders
+    group by 1
+)
+
+select * from stats
+  );
+
+[0m21:35:53.306347 [debug] [Thread-3 (]: Using duckdb connection "model.retail_analytics.fct_orders"
+[0m21:35:53.306644 [debug] [Thread-3 (]: On model.retail_analytics.fct_orders: BEGIN
+[0m21:35:53.306848 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:35:53.307382 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:35:53.307623 [debug] [Thread-3 (]: Using duckdb connection "model.retail_analytics.fct_orders"
+[0m21:35:53.307843 [debug] [Thread-3 (]: On model.retail_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.fct_orders"} */
+
+  
+    
+    
+
+    create  table
+      "analytics"."marts"."fct_orders__dbt_tmp"
+  
+    as (
+      -- Fact: orders (invoice grain) for revenue analytics.
+select
+    invoice_id as order_id,
+    customer_id,
+    order_ts,
+    order_date,
+    country,
+    n_lines,
+    n_items,
+    n_products,
+    order_revenue
+from "analytics"."intermediate"."int_orders"
+    );
+  
+  
+[0m21:35:53.308310 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:35:53.310380 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.int_customer_order_stats"
+[0m21:35:53.310682 [debug] [Thread-4 (]: On model.retail_analytics.int_customer_order_stats: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.int_customer_order_stats"} */
+alter view "analytics"."intermediate"."int_customer_order_stats__dbt_tmp" rename to "int_customer_order_stats"
+[0m21:35:53.311542 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:35:53.312580 [debug] [Thread-4 (]: On model.retail_analytics.int_customer_order_stats: COMMIT
+[0m21:35:53.312914 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.int_customer_order_stats"
+[0m21:35:53.313186 [debug] [Thread-4 (]: On model.retail_analytics.int_customer_order_stats: COMMIT
+[0m21:35:53.314608 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:35:53.316096 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.int_customer_order_stats"
+[0m21:35:53.316380 [debug] [Thread-4 (]: On model.retail_analytics.int_customer_order_stats: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.int_customer_order_stats"} */
+
+      drop view if exists "analytics"."intermediate"."int_customer_order_stats__dbt_backup" cascade
+    
+[0m21:35:53.316962 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:35:53.317993 [debug] [Thread-4 (]: On model.retail_analytics.int_customer_order_stats: Close
+[0m21:35:53.318446 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e24504590>]}
+[0m21:35:53.318912 [info ] [Thread-4 (]: 4 of 7 OK created sql view model intermediate.int_customer_order_stats ......... [[32mOK[0m in 0.04s]
+[0m21:35:53.319311 [debug] [Thread-4 (]: Finished running node model.retail_analytics.int_customer_order_stats
+[0m21:35:53.320072 [debug] [Thread-1 (]: Began running node model.retail_analytics.dim_customers
+[0m21:35:53.320491 [info ] [Thread-1 (]: 5 of 7 START sql table model marts.dim_customers ............................... [RUN]
+[0m21:35:53.320838 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_analytics.stg_transactions, now model.retail_analytics.dim_customers)
+[0m21:35:53.321102 [debug] [Thread-1 (]: Began compiling node model.retail_analytics.dim_customers
+[0m21:35:53.323486 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_analytics.dim_customers"
+[0m21:35:53.323983 [debug] [Thread-1 (]: Began executing node model.retail_analytics.dim_customers
+[0m21:35:53.325855 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_analytics.dim_customers"
+[0m21:35:53.326354 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.dim_customers"
+[0m21:35:53.326610 [debug] [Thread-1 (]: On model.retail_analytics.dim_customers: BEGIN
+[0m21:35:53.326854 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:53.327380 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:35:53.327624 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.dim_customers"
+[0m21:35:53.327855 [debug] [Thread-1 (]: On model.retail_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.dim_customers"} */
+
+  
+    
+    
+
+    create  table
+      "analytics"."marts"."dim_customers__dbt_tmp"
+  
+    as (
+      -- Dimension: one row per customer with order lifetime stats.
+with stats as (
+    select * from "analytics"."intermediate"."int_customer_order_stats"
+),
+
+countries as (
+    select
+        customer_id,
+        mode(country) as primary_country
+    from "analytics"."intermediate"."int_orders"
+    group by 1
+)
+
+select
+    s.customer_id,
+    c.primary_country as country,
+    s.first_order_date,
+    s.last_order_date,
+    s.frequency,
+    s.monetary,
+    s.avg_order_value,
+    s.n_items,
+    date_diff('day', s.first_order_date, s.last_order_date) as tenure_days
+from stats s
+left join countries c using (customer_id)
+    );
+  
+  
+[0m21:35:53.348464 [debug] [Thread-3 (]: SQL status: OK in 0.040 seconds
+[0m21:35:53.350644 [debug] [Thread-3 (]: Using duckdb connection "model.retail_analytics.fct_orders"
+[0m21:35:53.350995 [debug] [Thread-3 (]: On model.retail_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.fct_orders"} */
+alter table "analytics"."marts"."fct_orders__dbt_tmp" rename to "fct_orders"
+[0m21:35:53.351378 [debug] [Thread-1 (]: SQL status: OK in 0.023 seconds
+[0m21:35:53.353897 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.dim_customers"
+[0m21:35:53.354221 [debug] [Thread-1 (]: On model.retail_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.dim_customers"} */
+alter table "analytics"."marts"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m21:35:53.354671 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m21:35:53.358539 [debug] [Thread-3 (]: On model.retail_analytics.fct_orders: COMMIT
+[0m21:35:53.358923 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m21:35:53.359315 [debug] [Thread-3 (]: Using duckdb connection "model.retail_analytics.fct_orders"
+[0m21:35:53.360426 [debug] [Thread-1 (]: On model.retail_analytics.dim_customers: COMMIT
+[0m21:35:53.360771 [debug] [Thread-3 (]: On model.retail_analytics.fct_orders: COMMIT
+[0m21:35:53.361096 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.dim_customers"
+[0m21:35:53.361471 [debug] [Thread-1 (]: On model.retail_analytics.dim_customers: COMMIT
+[0m21:35:53.365103 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m21:35:53.366734 [debug] [Thread-3 (]: Using duckdb connection "model.retail_analytics.fct_orders"
+[0m21:35:53.367046 [debug] [Thread-3 (]: On model.retail_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.fct_orders"} */
+
+      drop table if exists "analytics"."marts"."fct_orders__dbt_backup" cascade
+    
+[0m21:35:53.367454 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m21:35:53.369863 [debug] [Thread-1 (]: Using duckdb connection "model.retail_analytics.dim_customers"
+[0m21:35:53.370252 [debug] [Thread-1 (]: On model.retail_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.dim_customers"} */
+
+      drop table if exists "analytics"."marts"."dim_customers__dbt_backup" cascade
+    
+[0m21:35:53.370768 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m21:35:53.372000 [debug] [Thread-3 (]: On model.retail_analytics.fct_orders: Close
+[0m21:35:53.372435 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:35:53.373068 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2d8e9d90>]}
+[0m21:35:53.374459 [debug] [Thread-1 (]: On model.retail_analytics.dim_customers: Close
+[0m21:35:53.375200 [info ] [Thread-3 (]: 3 of 7 OK created sql table model marts.fct_orders ............................. [[32mOK[0m in 0.09s]
+[0m21:35:53.375765 [debug] [Thread-3 (]: Finished running node model.retail_analytics.fct_orders
+[0m21:35:53.376343 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2c4b6a50>]}
+[0m21:35:53.377118 [info ] [Thread-1 (]: 5 of 7 OK created sql table model marts.dim_customers .......................... [[32mOK[0m in 0.06s]
+[0m21:35:53.377755 [debug] [Thread-1 (]: Finished running node model.retail_analytics.dim_customers
+[0m21:35:53.378185 [debug] [Thread-2 (]: Began running node model.retail_analytics.mart_daily_revenue
+[0m21:35:53.378822 [info ] [Thread-2 (]: 6 of 7 START sql table model marts.mart_daily_revenue .......................... [RUN]
+[0m21:35:53.379274 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.retail_analytics.int_orders, now model.retail_analytics.mart_daily_revenue)
+[0m21:35:53.379568 [debug] [Thread-2 (]: Began compiling node model.retail_analytics.mart_daily_revenue
+[0m21:35:53.379904 [debug] [Thread-4 (]: Began running node model.retail_analytics.mart_rfm
+[0m21:35:53.381994 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail_analytics.mart_daily_revenue"
+[0m21:35:53.382528 [info ] [Thread-4 (]: 7 of 7 START sql table model marts.mart_rfm .................................... [RUN]
+[0m21:35:53.383157 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.retail_analytics.int_customer_order_stats, now model.retail_analytics.mart_rfm)
+[0m21:35:53.383563 [debug] [Thread-4 (]: Began compiling node model.retail_analytics.mart_rfm
+[0m21:35:53.385992 [debug] [Thread-4 (]: Writing injected SQL for node "model.retail_analytics.mart_rfm"
+[0m21:35:53.386466 [debug] [Thread-2 (]: Began executing node model.retail_analytics.mart_daily_revenue
+[0m21:35:53.389131 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail_analytics.mart_daily_revenue"
+[0m21:35:53.389652 [debug] [Thread-4 (]: Began executing node model.retail_analytics.mart_rfm
+[0m21:35:53.391732 [debug] [Thread-4 (]: Writing runtime sql for node "model.retail_analytics.mart_rfm"
+[0m21:35:53.392236 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.mart_daily_revenue"
+[0m21:35:53.392630 [debug] [Thread-2 (]: On model.retail_analytics.mart_daily_revenue: BEGIN
+[0m21:35:53.392894 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:53.393455 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.mart_rfm"
+[0m21:35:53.393907 [debug] [Thread-4 (]: On model.retail_analytics.mart_rfm: BEGIN
+[0m21:35:53.394234 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:35:53.394586 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:35:53.395080 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.mart_daily_revenue"
+[0m21:35:53.395323 [debug] [Thread-2 (]: On model.retail_analytics.mart_daily_revenue: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.mart_daily_revenue"} */
+
+  
+    
+    
+
+    create  table
+      "analytics"."marts"."mart_daily_revenue__dbt_tmp"
+  
+    as (
+      -- Mart: daily revenue KPIs (warehouse-style reporting table).
+select
+    order_date as revenue_date,
+    count(*) as n_orders,
+    count(distinct customer_id) as n_customers,
+    sum(n_items) as n_items,
+    round(sum(order_revenue), 2) as daily_revenue,
+    round(avg(order_revenue), 2) as avg_order_value
+from "analytics"."marts"."fct_orders"
+group by 1
+order by 1
+    );
+  
+  
+[0m21:35:53.395845 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:35:53.396176 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.mart_rfm"
+[0m21:35:53.396478 [debug] [Thread-4 (]: On model.retail_analytics.mart_rfm: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.mart_rfm"} */
+
+  
+    
+    
+
+    create  table
+      "analytics"."marts"."mart_rfm__dbt_tmp"
+  
+    as (
+      -- Mart: RFM scores + transparent rule-based segments (recomputed in dbt SQL).
+-- Recency = days between last order and var rfm_as_of_date.
+
+
+with base as (
+    select
+        customer_id,
+        frequency,
+        monetary,
+        last_order_date,
+        date_diff('day', last_order_date, date '2011-12-09') as recency
+    from "analytics"."marts"."dim_customers"
+),
+
+scored as (
+    select
+        *,
+        ntile(5) over (order by recency asc) as r_score,   -- lower recency → higher score via reverse below
+        ntile(5) over (order by frequency asc) as f_score,
+        ntile(5) over (order by monetary asc) as m_score
+    from base
+),
+
+-- Invert R so 5 = most recent (smallest recency)
+rfm as (
+    select
+        customer_id,
+        recency,
+        frequency,
+        monetary,
+        last_order_date,
+        (6 - r_score) as r_score,
+        f_score,
+        m_score,
+        (6 - r_score) + f_score + m_score as rfm_score
+    from scored
+),
+
+segmented as (
+    select
+        *,
+        case
+            when r_score >= 4 and f_score >= 4 and m_score >= 4 then 'Champions'
+            when r_score >= 3 and f_score >= 3 and m_score >= 4 then 'Loyal'
+            when r_score >= 4 and f_score <= 2 then 'New / Promising'
+            when r_score <= 2 and f_score >= 3 and m_score >= 3 then 'At Risk'
+            when r_score <= 2 and f_score <= 2 then 'Hibernating'
+            when m_score = 5 and f_score <= 2 then 'Big Spenders'
+            else 'Need Attention'
+        end as segment
+    from rfm
+)
+
+select * from segmented
+    );
+  
+  
+[0m21:35:53.400136 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m21:35:53.402559 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.mart_daily_revenue"
+[0m21:35:53.402903 [debug] [Thread-2 (]: On model.retail_analytics.mart_daily_revenue: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.mart_daily_revenue"} */
+alter table "analytics"."marts"."mart_daily_revenue__dbt_tmp" rename to "mart_daily_revenue"
+[0m21:35:53.403277 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m21:35:53.405499 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.mart_rfm"
+[0m21:35:53.405828 [debug] [Thread-4 (]: On model.retail_analytics.mart_rfm: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.mart_rfm"} */
+alter table "analytics"."marts"."mart_rfm__dbt_tmp" rename to "mart_rfm"
+[0m21:35:53.406240 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m21:35:53.407312 [debug] [Thread-2 (]: On model.retail_analytics.mart_daily_revenue: COMMIT
+[0m21:35:53.407660 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:35:53.408020 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.mart_daily_revenue"
+[0m21:35:53.409090 [debug] [Thread-4 (]: On model.retail_analytics.mart_rfm: COMMIT
+[0m21:35:53.409430 [debug] [Thread-2 (]: On model.retail_analytics.mart_daily_revenue: COMMIT
+[0m21:35:53.409763 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.mart_rfm"
+[0m21:35:53.410140 [debug] [Thread-4 (]: On model.retail_analytics.mart_rfm: COMMIT
+[0m21:35:53.410938 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:35:53.412484 [debug] [Thread-2 (]: Using duckdb connection "model.retail_analytics.mart_daily_revenue"
+[0m21:35:53.412784 [debug] [Thread-2 (]: On model.retail_analytics.mart_daily_revenue: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.mart_daily_revenue"} */
+
+      drop table if exists "analytics"."marts"."mart_daily_revenue__dbt_backup" cascade
+    
+[0m21:35:53.413140 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m21:35:53.415193 [debug] [Thread-4 (]: Using duckdb connection "model.retail_analytics.mart_rfm"
+[0m21:35:53.415519 [debug] [Thread-4 (]: On model.retail_analytics.mart_rfm: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "model.retail_analytics.mart_rfm"} */
+
+      drop table if exists "analytics"."marts"."mart_rfm__dbt_backup" cascade
+    
+[0m21:35:53.415852 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:35:53.417085 [debug] [Thread-2 (]: On model.retail_analytics.mart_daily_revenue: Close
+[0m21:35:53.417635 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2c4b6690>]}
+[0m21:35:53.418105 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:35:53.418839 [info ] [Thread-2 (]: 6 of 7 OK created sql table model marts.mart_daily_revenue ..................... [[32mOK[0m in 0.04s]
+[0m21:35:53.420081 [debug] [Thread-4 (]: On model.retail_analytics.mart_rfm: Close
+[0m21:35:53.420526 [debug] [Thread-2 (]: Finished running node model.retail_analytics.mart_daily_revenue
+[0m21:35:53.421128 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed581496-1cb3-4b9f-8ff9-16c5c93d9331', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2c4b68d0>]}
+[0m21:35:53.421663 [info ] [Thread-4 (]: 7 of 7 OK created sql table model marts.mart_rfm ............................... [[32mOK[0m in 0.04s]
+[0m21:35:53.422188 [debug] [Thread-4 (]: Finished running node model.retail_analytics.mart_rfm
+[0m21:35:53.423978 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:35:53.424273 [debug] [MainThread]: On master: BEGIN
+[0m21:35:53.424482 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:35:53.424973 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:35:53.425188 [debug] [MainThread]: On master: COMMIT
+[0m21:35:53.425381 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:35:53.425566 [debug] [MainThread]: On master: COMMIT
+[0m21:35:53.425948 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:35:53.426160 [debug] [MainThread]: On master: Close
+[0m21:35:53.426437 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:35:53.426610 [debug] [MainThread]: Connection 'model.retail_analytics.fct_orders' was properly closed.
+[0m21:35:53.426765 [debug] [MainThread]: Connection 'model.retail_analytics.mart_daily_revenue' was properly closed.
+[0m21:35:53.426912 [debug] [MainThread]: Connection 'model.retail_analytics.dim_customers' was properly closed.
+[0m21:35:53.427059 [debug] [MainThread]: Connection 'model.retail_analytics.mart_rfm' was properly closed.
+[0m21:35:53.427327 [info ] [MainThread]: 
+[0m21:35:53.427543 [info ] [MainThread]: Finished running 4 table models, 3 view models in 0 hours 0 minutes and 0.36 seconds (0.36s).
+[0m21:35:53.428443 [debug] [MainThread]: Command end result
+[0m21:35:53.447698 [debug] [MainThread]: Wrote artifact WritableManifest to ./target/manifest.json
+[0m21:35:53.449132 [debug] [MainThread]: Wrote artifact SemanticManifest to ./target/semantic_manifest.json
+[0m21:35:53.453444 [debug] [MainThread]: Wrote artifact RunExecutionResult to ./target/run_results.json
+[0m21:35:53.453798 [info ] [MainThread]: 
+[0m21:35:53.454107 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:35:53.454316 [info ] [MainThread]: 
+[0m21:35:53.454545 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m21:35:53.455292 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.816913, "process_in_blocks": "0", "process_kernel_time": 0.207007, "process_mem_max_rss": "235640", "process_out_blocks": "7752", "process_user_time": 2.921893}
+[0m21:35:53.455647 [debug] [MainThread]: Command `dbt run` succeeded at 21:35:53.455578 after 1.82 seconds
+[0m21:35:53.455906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e37f48350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e2d82eb70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e24523e30>]}
+[0m21:35:53.456158 [debug] [MainThread]: Flushing usage events
+[0m21:35:53.794799 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:35:55.142825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f493e4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f4bfdaad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f486cbc50>]}
+
+
+============================== 21:35:55.145894 | b2535789-28cc-43b5-ab1f-bcbfd2816134 ==============================
+[0m21:35:55.145894 [info ] [MainThread]: Running with dbt=1.9.11
+[0m21:35:55.146303 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'version_check': 'True', 'use_colors': 'True', 'introspect': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'profiles_dir': '.', 'target_path': 'None', 'static_parser': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'log_format': 'default', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'cache_selected_only': 'False', 'invocation_command': 'dbt test --profiles-dir . --project-dir .', 'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False'}
+[0m21:35:55.146557 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m21:35:55.146787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'b2535789-28cc-43b5-ab1f-bcbfd2816134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f48753ce0>]}
+[0m21:35:55.324433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b2535789-28cc-43b5-ab1f-bcbfd2816134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f485c2690>]}
+[0m21:35:55.371689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b2535789-28cc-43b5-ab1f-bcbfd2816134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f4485d550>]}
+[0m21:35:55.373191 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m21:35:55.415592 [debug] [MainThread]: checksum: 2191bf62271fd478cf28c21ce953ef202bc2236227e4db3dd4cef6b50a0a91d4, vars: {}, profile: , target: , version: 1.9.11
+[0m21:35:55.499247 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:35:55.499609 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:35:55.538107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b2535789-28cc-43b5-ab1f-bcbfd2816134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f406676b0>]}
+[0m21:35:55.598337 [debug] [MainThread]: Wrote artifact WritableManifest to ./target/manifest.json
+[0m21:35:55.599884 [debug] [MainThread]: Wrote artifact SemanticManifest to ./target/semantic_manifest.json
+[0m21:35:55.618338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b2535789-28cc-43b5-ab1f-bcbfd2816134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f44940830>]}
+[0m21:35:55.618746 [info ] [MainThread]: Found 7 models, 26 data tests, 2 sources, 473 macros
+[0m21:35:55.618997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2535789-28cc-43b5-ab1f-bcbfd2816134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f403e6410>]}
+[0m21:35:55.621177 [info ] [MainThread]: 
+[0m21:35:55.621462 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:35:55.621650 [info ] [MainThread]: 
+[0m21:35:55.622054 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:35:55.626204 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_marts'
+[0m21:35:55.636146 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_intermediate'
+[0m21:35:55.642603 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_staging'
+[0m21:35:55.655518 [debug] [ThreadPool]: Using duckdb connection "list_analytics_marts"
+[0m21:35:55.656028 [debug] [ThreadPool]: Using duckdb connection "list_analytics_intermediate"
+[0m21:35:55.656687 [debug] [ThreadPool]: On list_analytics_marts: BEGIN
+[0m21:35:55.657093 [debug] [ThreadPool]: Using duckdb connection "list_analytics_staging"
+[0m21:35:55.657494 [debug] [ThreadPool]: On list_analytics_intermediate: BEGIN
+[0m21:35:55.658193 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:35:55.658834 [debug] [ThreadPool]: On list_analytics_staging: BEGIN
+[0m21:35:55.659217 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:35:55.659952 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:35:55.671918 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m21:35:55.672304 [debug] [ThreadPool]: Using duckdb connection "list_analytics_marts"
+[0m21:35:55.672565 [debug] [ThreadPool]: On list_analytics_marts: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics_marts"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'marts'
+    and lower(table_catalog) = 'analytics'
+  
+[0m21:35:55.673014 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m21:35:55.673337 [debug] [ThreadPool]: Using duckdb connection "list_analytics_staging"
+[0m21:35:55.673589 [debug] [ThreadPool]: On list_analytics_staging: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics_staging"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'staging'
+    and lower(table_catalog) = 'analytics'
+  
+[0m21:35:55.673926 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m21:35:55.674611 [debug] [ThreadPool]: Using duckdb connection "list_analytics_intermediate"
+[0m21:35:55.674846 [debug] [ThreadPool]: On list_analytics_intermediate: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "connection_name": "list_analytics_intermediate"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'intermediate'
+    and lower(table_catalog) = 'analytics'
+  
+[0m21:35:55.676111 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m21:35:55.676640 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:35:55.677904 [debug] [ThreadPool]: On list_analytics_marts: ROLLBACK
+[0m21:35:55.679093 [debug] [ThreadPool]: On list_analytics_staging: ROLLBACK
+[0m21:35:55.679883 [debug] [ThreadPool]: Failed to rollback 'list_analytics_staging'
+[0m21:35:55.680498 [debug] [ThreadPool]: Failed to rollback 'list_analytics_marts'
+[0m21:35:55.680828 [debug] [ThreadPool]: On list_analytics_staging: Close
+[0m21:35:55.681178 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m21:35:55.681534 [debug] [ThreadPool]: On list_analytics_marts: Close
+[0m21:35:55.683255 [debug] [ThreadPool]: On list_analytics_intermediate: ROLLBACK
+[0m21:35:55.683976 [debug] [ThreadPool]: Failed to rollback 'list_analytics_intermediate'
+[0m21:35:55.684834 [debug] [ThreadPool]: On list_analytics_intermediate: Close
+[0m21:35:55.686522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2535789-28cc-43b5-ab1f-bcbfd2816134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f403f4c50>]}
+[0m21:35:55.686989 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:35:55.687185 [debug] [MainThread]: On master: BEGIN
+[0m21:35:55.687347 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:35:55.687803 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:35:55.688007 [debug] [MainThread]: On master: COMMIT
+[0m21:35:55.688202 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:35:55.688376 [debug] [MainThread]: On master: COMMIT
+[0m21:35:55.688730 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:35:55.688941 [debug] [MainThread]: On master: Close
+[0m21:35:55.692164 [debug] [Thread-4 (]: Began running node test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9
+[0m21:35:55.692657 [debug] [Thread-1 (]: Began running node test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41
+[0m21:35:55.693130 [debug] [Thread-3 (]: Began running node test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m21:35:55.693575 [debug] [Thread-2 (]: Began running node test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82
+[0m21:35:55.694015 [info ] [Thread-4 (]: 4 of 26 START test not_null_dim_customers_first_order_date ..................... [RUN]
+[0m21:35:55.694440 [info ] [Thread-1 (]: 1 of 26 START test accepted_values_mart_rfm_r_score__False__1__2__3__4__5 ...... [RUN]
+[0m21:35:55.694967 [info ] [Thread-3 (]: 3 of 26 START test not_null_dim_customers_customer_id .......................... [RUN]
+[0m21:35:55.695349 [info ] [Thread-2 (]: 2 of 26 START test accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders  [RUN]
+[0m21:35:55.695849 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9'
+[0m21:35:55.696283 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_analytics_intermediate, now test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41)
+[0m21:35:55.696717 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_analytics_staging, now test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m21:35:55.697111 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_analytics_marts, now test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82)
+[0m21:35:55.697459 [debug] [Thread-4 (]: Began compiling node test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9
+[0m21:35:55.697823 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41
+[0m21:35:55.698144 [debug] [Thread-3 (]: Began compiling node test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m21:35:55.698443 [debug] [Thread-2 (]: Began compiling node test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82
+[0m21:35:55.719616 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9"
+[0m21:35:55.720132 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41"
+[0m21:35:55.722792 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m21:35:55.784192 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82"
+[0m21:35:55.785053 [debug] [Thread-4 (]: Began executing node test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9
+[0m21:35:55.785614 [debug] [Thread-1 (]: Began executing node test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41
+[0m21:35:55.786288 [debug] [Thread-3 (]: Began executing node test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m21:35:55.800774 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9"
+[0m21:35:55.801255 [debug] [Thread-2 (]: Began executing node test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82
+[0m21:35:55.802962 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41"
+[0m21:35:55.804543 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m21:35:55.806620 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82"
+[0m21:35:55.807316 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9"
+[0m21:35:55.808185 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41"
+[0m21:35:55.808682 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m21:35:55.809048 [debug] [Thread-4 (]: On test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9: BEGIN
+[0m21:35:55.809464 [debug] [Thread-1 (]: On test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41: BEGIN
+[0m21:35:55.809875 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82"
+[0m21:35:55.810241 [debug] [Thread-3 (]: On test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d: BEGIN
+[0m21:35:55.810583 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:35:55.811111 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:55.811513 [debug] [Thread-2 (]: On test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82: BEGIN
+[0m21:35:55.811892 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:35:55.812856 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:55.813499 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.813925 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.814482 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.814919 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9"
+[0m21:35:55.815378 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.815800 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41"
+[0m21:35:55.816278 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m21:35:55.816658 [debug] [Thread-4 (]: On test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select first_order_date
+from "analytics"."marts"."dim_customers"
+where first_order_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.817042 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82"
+[0m21:35:55.817423 [debug] [Thread-1 (]: On test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        r_score as value_field,
+        count(*) as n_records
+
+    from "analytics"."marts"."mart_rfm"
+    group by r_score
+
+)
+
+select *
+from all_values
+where value_field not in (
+    1,2,3,4,5
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.817843 [debug] [Thread-3 (]: On test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "analytics"."marts"."dim_customers"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.818483 [debug] [Thread-2 (]: On test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        segment as value_field,
+        count(*) as n_records
+
+    from "analytics"."marts"."mart_rfm"
+    group by segment
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Champions','Loyal','At Risk','Hibernating','Need Attention','New / Promising','Big Spenders'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.819273 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:35:55.823865 [debug] [Thread-4 (]: On test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9: ROLLBACK
+[0m21:35:55.824499 [debug] [Thread-4 (]: Failed to rollback 'test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9'
+[0m21:35:55.824924 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m21:35:55.825409 [debug] [Thread-3 (]: SQL status: OK in 0.006 seconds
+[0m21:35:55.825833 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m21:35:55.826191 [debug] [Thread-4 (]: On test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9: Close
+[0m21:35:55.828042 [debug] [Thread-1 (]: On test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41: ROLLBACK
+[0m21:35:55.829381 [debug] [Thread-3 (]: On test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d: ROLLBACK
+[0m21:35:55.830234 [debug] [Thread-1 (]: Failed to rollback 'test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41'
+[0m21:35:55.831726 [debug] [Thread-2 (]: On test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82: ROLLBACK
+[0m21:35:55.832320 [info ] [Thread-4 (]: 4 of 26 PASS not_null_dim_customers_first_order_date ........................... [[32mPASS[0m in 0.14s]
+[0m21:35:55.833030 [debug] [Thread-3 (]: Failed to rollback 'test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d'
+[0m21:35:55.833484 [debug] [Thread-1 (]: On test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41: Close
+[0m21:35:55.834415 [debug] [Thread-2 (]: Failed to rollback 'test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82'
+[0m21:35:55.834997 [debug] [Thread-4 (]: Finished running node test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9
+[0m21:35:55.835392 [debug] [Thread-3 (]: On test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d: Close
+[0m21:35:55.836156 [info ] [Thread-1 (]: 1 of 26 PASS accepted_values_mart_rfm_r_score__False__1__2__3__4__5 ............ [[32mPASS[0m in 0.14s]
+[0m21:35:55.836607 [debug] [Thread-2 (]: On test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82: Close
+[0m21:35:55.837112 [debug] [Thread-4 (]: Began running node test.retail_analytics.not_null_dim_customers_frequency.e11cedf709
+[0m21:35:55.837870 [info ] [Thread-3 (]: 3 of 26 PASS not_null_dim_customers_customer_id ................................ [[32mPASS[0m in 0.14s]
+[0m21:35:55.838535 [debug] [Thread-1 (]: Finished running node test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41
+[0m21:35:55.839190 [info ] [Thread-2 (]: 2 of 26 PASS accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders  [[32mPASS[0m in 0.14s]
+[0m21:35:55.839632 [info ] [Thread-4 (]: 5 of 26 START test not_null_dim_customers_frequency ............................ [RUN]
+[0m21:35:55.840310 [debug] [Thread-3 (]: Finished running node test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m21:35:55.840753 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_dim_customers_monetary.35caa6c254
+[0m21:35:55.841464 [debug] [Thread-2 (]: Finished running node test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82
+[0m21:35:55.841949 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_dim_customers_first_order_date.9a64de5dc9, now test.retail_analytics.not_null_dim_customers_frequency.e11cedf709)
+[0m21:35:55.842384 [debug] [Thread-3 (]: Began running node test.retail_analytics.not_null_fct_orders_country.0edcc91e35
+[0m21:35:55.842803 [info ] [Thread-1 (]: 6 of 26 START test not_null_dim_customers_monetary ............................. [RUN]
+[0m21:35:55.843277 [debug] [Thread-2 (]: Began running node test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b
+[0m21:35:55.843764 [debug] [Thread-4 (]: Began compiling node test.retail_analytics.not_null_dim_customers_frequency.e11cedf709
+[0m21:35:55.844170 [info ] [Thread-3 (]: 7 of 26 START test not_null_fct_orders_country ................................. [RUN]
+[0m21:35:55.844682 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.accepted_values_mart_rfm_r_score__False__1__2__3__4__5.534b73fb41, now test.retail_analytics.not_null_dim_customers_monetary.35caa6c254)
+[0m21:35:55.845097 [info ] [Thread-2 (]: 8 of 26 START test not_null_fct_orders_customer_id ............................. [RUN]
+[0m21:35:55.848153 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_analytics.not_null_dim_customers_frequency.e11cedf709"
+[0m21:35:55.848699 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_dim_customers_customer_id.dd91cd1c8d, now test.retail_analytics.not_null_fct_orders_country.0edcc91e35)
+[0m21:35:55.849135 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_dim_customers_monetary.35caa6c254
+[0m21:35:55.849626 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_analytics.accepted_values_mart_rfm_segment__Champions__Loyal__At_Risk__Hibernating__Need_Attention__New_Promising__Big_Spenders.8330eaad82, now test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b)
+[0m21:35:55.850141 [debug] [Thread-3 (]: Began compiling node test.retail_analytics.not_null_fct_orders_country.0edcc91e35
+[0m21:35:55.853609 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_dim_customers_monetary.35caa6c254"
+[0m21:35:55.854092 [debug] [Thread-2 (]: Began compiling node test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b
+[0m21:35:55.854461 [debug] [Thread-4 (]: Began executing node test.retail_analytics.not_null_dim_customers_frequency.e11cedf709
+[0m21:35:55.857483 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_analytics.not_null_fct_orders_country.0edcc91e35"
+[0m21:35:55.858008 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_dim_customers_monetary.35caa6c254
+[0m21:35:55.860938 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b"
+[0m21:35:55.863023 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_analytics.not_null_dim_customers_frequency.e11cedf709"
+[0m21:35:55.865119 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_dim_customers_monetary.35caa6c254"
+[0m21:35:55.865831 [debug] [Thread-3 (]: Began executing node test.retail_analytics.not_null_fct_orders_country.0edcc91e35
+[0m21:35:55.866341 [debug] [Thread-2 (]: Began executing node test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b
+[0m21:35:55.866835 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_dim_customers_frequency.e11cedf709"
+[0m21:35:55.868663 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_analytics.not_null_fct_orders_country.0edcc91e35"
+[0m21:35:55.870622 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b"
+[0m21:35:55.871199 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_dim_customers_monetary.35caa6c254"
+[0m21:35:55.871663 [debug] [Thread-4 (]: On test.retail_analytics.not_null_dim_customers_frequency.e11cedf709: BEGIN
+[0m21:35:55.872360 [debug] [Thread-1 (]: On test.retail_analytics.not_null_dim_customers_monetary.35caa6c254: BEGIN
+[0m21:35:55.872868 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b"
+[0m21:35:55.873325 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:35:55.873825 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_country.0edcc91e35"
+[0m21:35:55.874283 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:55.874663 [debug] [Thread-2 (]: On test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b: BEGIN
+[0m21:35:55.875269 [debug] [Thread-3 (]: On test.retail_analytics.not_null_fct_orders_country.0edcc91e35: BEGIN
+[0m21:35:55.875894 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.876218 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:55.876555 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:35:55.876897 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_dim_customers_frequency.e11cedf709"
+[0m21:35:55.877242 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.877931 [debug] [Thread-4 (]: On test.retail_analytics.not_null_dim_customers_frequency.e11cedf709: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_dim_customers_frequency.e11cedf709"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select frequency
+from "analytics"."marts"."dim_customers"
+where frequency is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.878340 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:35:55.878766 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:35:55.879129 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_dim_customers_monetary.35caa6c254"
+[0m21:35:55.879750 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b"
+[0m21:35:55.880230 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_country.0edcc91e35"
+[0m21:35:55.880655 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:35:55.881067 [debug] [Thread-1 (]: On test.retail_analytics.not_null_dim_customers_monetary.35caa6c254: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_dim_customers_monetary.35caa6c254"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select monetary
+from "analytics"."marts"."dim_customers"
+where monetary is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.881492 [debug] [Thread-2 (]: On test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "analytics"."marts"."fct_orders"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.881887 [debug] [Thread-3 (]: On test.retail_analytics.not_null_fct_orders_country.0edcc91e35: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_fct_orders_country.0edcc91e35"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select country
+from "analytics"."marts"."fct_orders"
+where country is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.883573 [debug] [Thread-4 (]: On test.retail_analytics.not_null_dim_customers_frequency.e11cedf709: ROLLBACK
+[0m21:35:55.884182 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:35:55.884885 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:35:55.885493 [debug] [Thread-4 (]: Failed to rollback 'test.retail_analytics.not_null_dim_customers_frequency.e11cedf709'
+[0m21:35:55.886913 [debug] [Thread-1 (]: On test.retail_analytics.not_null_dim_customers_monetary.35caa6c254: ROLLBACK
+[0m21:35:55.887479 [debug] [Thread-4 (]: On test.retail_analytics.not_null_dim_customers_frequency.e11cedf709: Close
+[0m21:35:55.887914 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.889117 [debug] [Thread-2 (]: On test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b: ROLLBACK
+[0m21:35:55.889860 [debug] [Thread-1 (]: Failed to rollback 'test.retail_analytics.not_null_dim_customers_monetary.35caa6c254'
+[0m21:35:55.890625 [info ] [Thread-4 (]: 5 of 26 PASS not_null_dim_customers_frequency .................................. [[32mPASS[0m in 0.05s]
+[0m21:35:55.891865 [debug] [Thread-3 (]: On test.retail_analytics.not_null_fct_orders_country.0edcc91e35: ROLLBACK
+[0m21:35:55.892738 [debug] [Thread-2 (]: Failed to rollback 'test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b'
+[0m21:35:55.893235 [debug] [Thread-1 (]: On test.retail_analytics.not_null_dim_customers_monetary.35caa6c254: Close
+[0m21:35:55.893835 [debug] [Thread-4 (]: Finished running node test.retail_analytics.not_null_dim_customers_frequency.e11cedf709
+[0m21:35:55.894440 [debug] [Thread-3 (]: Failed to rollback 'test.retail_analytics.not_null_fct_orders_country.0edcc91e35'
+[0m21:35:55.894866 [debug] [Thread-2 (]: On test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b: Close
+[0m21:35:55.895343 [debug] [Thread-4 (]: Began running node test.retail_analytics.not_null_fct_orders_order_date.84f0a76362
+[0m21:35:55.895859 [info ] [Thread-1 (]: 6 of 26 PASS not_null_dim_customers_monetary ................................... [[32mPASS[0m in 0.05s]
+[0m21:35:55.896405 [debug] [Thread-3 (]: On test.retail_analytics.not_null_fct_orders_country.0edcc91e35: Close
+[0m21:35:55.897052 [info ] [Thread-2 (]: 8 of 26 PASS not_null_fct_orders_customer_id ................................... [[32mPASS[0m in 0.05s]
+[0m21:35:55.897515 [info ] [Thread-4 (]: 9 of 26 START test not_null_fct_orders_order_date .............................. [RUN]
+[0m21:35:55.898402 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_dim_customers_monetary.35caa6c254
+[0m21:35:55.898967 [debug] [Thread-2 (]: Finished running node test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b
+[0m21:35:55.899459 [info ] [Thread-3 (]: 7 of 26 PASS not_null_fct_orders_country ....................................... [[32mPASS[0m in 0.05s]
+[0m21:35:55.900016 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_dim_customers_frequency.e11cedf709, now test.retail_analytics.not_null_fct_orders_order_date.84f0a76362)
+[0m21:35:55.900545 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0
+[0m21:35:55.901049 [debug] [Thread-2 (]: Began running node test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60
+[0m21:35:55.901770 [debug] [Thread-3 (]: Finished running node test.retail_analytics.not_null_fct_orders_country.0edcc91e35
+[0m21:35:55.902143 [debug] [Thread-4 (]: Began compiling node test.retail_analytics.not_null_fct_orders_order_date.84f0a76362
+[0m21:35:55.902530 [info ] [Thread-1 (]: 10 of 26 START test not_null_fct_orders_order_id ............................... [RUN]
+[0m21:35:55.902933 [info ] [Thread-2 (]: 11 of 26 START test not_null_fct_orders_order_revenue .......................... [RUN]
+[0m21:35:55.903400 [debug] [Thread-3 (]: Began running node test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf
+[0m21:35:55.906576 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_analytics.not_null_fct_orders_order_date.84f0a76362"
+[0m21:35:55.907096 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_dim_customers_monetary.35caa6c254, now test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0)
+[0m21:35:55.907516 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_fct_orders_customer_id.16fe324f7b, now test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60)
+[0m21:35:55.907870 [info ] [Thread-3 (]: 12 of 26 START test not_null_mart_daily_revenue_daily_revenue .................. [RUN]
+[0m21:35:55.908402 [debug] [Thread-4 (]: Began executing node test.retail_analytics.not_null_fct_orders_order_date.84f0a76362
+[0m21:35:55.908808 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0
+[0m21:35:55.909171 [debug] [Thread-2 (]: Began compiling node test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60
+[0m21:35:55.909529 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_fct_orders_country.0edcc91e35, now test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf)
+[0m21:35:55.911515 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_analytics.not_null_fct_orders_order_date.84f0a76362"
+[0m21:35:55.914829 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0"
+[0m21:35:55.917743 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60"
+[0m21:35:55.918196 [debug] [Thread-3 (]: Began compiling node test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf
+[0m21:35:55.918919 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_order_date.84f0a76362"
+[0m21:35:55.919355 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0
+[0m21:35:55.922670 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf"
+[0m21:35:55.923179 [debug] [Thread-4 (]: On test.retail_analytics.not_null_fct_orders_order_date.84f0a76362: BEGIN
+[0m21:35:55.923652 [debug] [Thread-2 (]: Began executing node test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60
+[0m21:35:55.925256 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0"
+[0m21:35:55.925734 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:35:55.927735 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60"
+[0m21:35:55.928157 [debug] [Thread-3 (]: Began executing node test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf
+[0m21:35:55.928720 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0"
+[0m21:35:55.930737 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf"
+[0m21:35:55.931406 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m21:35:55.931804 [debug] [Thread-1 (]: On test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0: BEGIN
+[0m21:35:55.932272 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60"
+[0m21:35:55.932796 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_order_date.84f0a76362"
+[0m21:35:55.933277 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:55.933764 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf"
+[0m21:35:55.934181 [debug] [Thread-2 (]: On test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60: BEGIN
+[0m21:35:55.934986 [debug] [Thread-4 (]: On test.retail_analytics.not_null_fct_orders_order_date.84f0a76362: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_fct_orders_order_date.84f0a76362"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_date
+from "analytics"."marts"."fct_orders"
+where order_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.935572 [debug] [Thread-3 (]: On test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf: BEGIN
+[0m21:35:55.935987 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:55.936423 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.936959 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:35:55.937438 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0"
+[0m21:35:55.937944 [debug] [Thread-1 (]: On test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from "analytics"."marts"."fct_orders"
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.938367 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:35:55.939094 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.939432 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:35:55.939854 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60"
+[0m21:35:55.941078 [debug] [Thread-4 (]: On test.retail_analytics.not_null_fct_orders_order_date.84f0a76362: ROLLBACK
+[0m21:35:55.941508 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.941863 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf"
+[0m21:35:55.942226 [debug] [Thread-2 (]: On test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_revenue
+from "analytics"."marts"."fct_orders"
+where order_revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.942961 [debug] [Thread-4 (]: Failed to rollback 'test.retail_analytics.not_null_fct_orders_order_date.84f0a76362'
+[0m21:35:55.943358 [debug] [Thread-3 (]: On test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select daily_revenue
+from "analytics"."marts"."mart_daily_revenue"
+where daily_revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.944584 [debug] [Thread-1 (]: On test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0: ROLLBACK
+[0m21:35:55.945176 [debug] [Thread-4 (]: On test.retail_analytics.not_null_fct_orders_order_date.84f0a76362: Close
+[0m21:35:55.945823 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:35:55.946427 [debug] [Thread-1 (]: Failed to rollback 'test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0'
+[0m21:35:55.947053 [info ] [Thread-4 (]: 9 of 26 PASS not_null_fct_orders_order_date .................................... [[32mPASS[0m in 0.05s]
+[0m21:35:55.947717 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:35:55.948169 [debug] [Thread-1 (]: On test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0: Close
+[0m21:35:55.948718 [debug] [Thread-4 (]: Finished running node test.retail_analytics.not_null_fct_orders_order_date.84f0a76362
+[0m21:35:55.949835 [debug] [Thread-2 (]: On test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60: ROLLBACK
+[0m21:35:55.950520 [info ] [Thread-1 (]: 10 of 26 PASS not_null_fct_orders_order_id ..................................... [[32mPASS[0m in 0.04s]
+[0m21:35:55.951720 [debug] [Thread-3 (]: On test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf: ROLLBACK
+[0m21:35:55.952133 [debug] [Thread-4 (]: Began running node test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd
+[0m21:35:55.952781 [debug] [Thread-2 (]: Failed to rollback 'test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60'
+[0m21:35:55.953378 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0
+[0m21:35:55.953970 [debug] [Thread-3 (]: Failed to rollback 'test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf'
+[0m21:35:55.954350 [info ] [Thread-4 (]: 13 of 26 START test not_null_mart_daily_revenue_revenue_date ................... [RUN]
+[0m21:35:55.954768 [debug] [Thread-2 (]: On test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60: Close
+[0m21:35:55.955465 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b
+[0m21:35:55.955854 [debug] [Thread-3 (]: On test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf: Close
+[0m21:35:55.956308 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_fct_orders_order_date.84f0a76362, now test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd)
+[0m21:35:55.956699 [info ] [Thread-1 (]: 14 of 26 START test not_null_mart_rfm_customer_id .............................. [RUN]
+[0m21:35:55.957590 [debug] [Thread-4 (]: Began compiling node test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd
+[0m21:35:55.957142 [info ] [Thread-2 (]: 11 of 26 PASS not_null_fct_orders_order_revenue ................................ [[32mPASS[0m in 0.05s]
+[0m21:35:55.958356 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_fct_orders_order_id.4e687af8d0, now test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b)
+[0m21:35:55.961835 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd"
+[0m21:35:55.958968 [info ] [Thread-3 (]: 12 of 26 PASS not_null_mart_daily_revenue_daily_revenue ........................ [[32mPASS[0m in 0.05s]
+[0m21:35:55.962511 [debug] [Thread-2 (]: Finished running node test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60
+[0m21:35:55.962936 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b
+[0m21:35:55.963886 [debug] [Thread-3 (]: Finished running node test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf
+[0m21:35:55.964250 [debug] [Thread-2 (]: Began running node test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c
+[0m21:35:55.964733 [debug] [Thread-4 (]: Began executing node test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd
+[0m21:35:55.967770 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b"
+[0m21:35:55.968213 [debug] [Thread-3 (]: Began running node test.retail_analytics.not_null_mart_rfm_segment.c08e944328
+[0m21:35:55.968718 [info ] [Thread-2 (]: 15 of 26 START test not_null_mart_rfm_r_score .................................. [RUN]
+[0m21:35:55.970305 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd"
+[0m21:35:55.971404 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_fct_orders_order_revenue.bceb3cba60, now test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c)
+[0m21:35:55.970989 [info ] [Thread-3 (]: 16 of 26 START test not_null_mart_rfm_segment .................................. [RUN]
+[0m21:35:55.972133 [debug] [Thread-2 (]: Began compiling node test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c
+[0m21:35:55.972535 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b
+[0m21:35:55.973038 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd"
+[0m21:35:55.973443 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_mart_daily_revenue_daily_revenue.08b938fbbf, now test.retail_analytics.not_null_mart_rfm_segment.c08e944328)
+[0m21:35:55.976308 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c"
+[0m21:35:55.978216 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b"
+[0m21:35:55.978814 [debug] [Thread-4 (]: On test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd: BEGIN
+[0m21:35:55.979204 [debug] [Thread-3 (]: Began compiling node test.retail_analytics.not_null_mart_rfm_segment.c08e944328
+[0m21:35:55.979756 [debug] [Thread-2 (]: Began executing node test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c
+[0m21:35:55.980198 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:35:55.980641 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b"
+[0m21:35:55.983467 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_analytics.not_null_mart_rfm_segment.c08e944328"
+[0m21:35:55.985276 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c"
+[0m21:35:55.985931 [debug] [Thread-1 (]: On test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b: BEGIN
+[0m21:35:55.986420 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m21:35:55.986981 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c"
+[0m21:35:55.987301 [debug] [Thread-3 (]: Began executing node test.retail_analytics.not_null_mart_rfm_segment.c08e944328
+[0m21:35:55.987597 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:55.987965 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd"
+[0m21:35:55.988320 [debug] [Thread-2 (]: On test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c: BEGIN
+[0m21:35:55.989769 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_analytics.not_null_mart_rfm_segment.c08e944328"
+[0m21:35:55.990414 [debug] [Thread-4 (]: On test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select revenue_date
+from "analytics"."marts"."mart_daily_revenue"
+where revenue_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.990802 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:55.991442 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m21:35:55.992272 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_mart_rfm_segment.c08e944328"
+[0m21:35:55.992642 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b"
+[0m21:35:55.993034 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:35:55.993402 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m21:35:55.993812 [debug] [Thread-3 (]: On test.retail_analytics.not_null_mart_rfm_segment.c08e944328: BEGIN
+[0m21:35:55.994265 [debug] [Thread-1 (]: On test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "analytics"."marts"."mart_rfm"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.994729 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c"
+[0m21:35:55.995036 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:35:55.996252 [debug] [Thread-4 (]: On test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd: ROLLBACK
+[0m21:35:55.996870 [debug] [Thread-2 (]: On test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select r_score
+from "analytics"."marts"."mart_rfm"
+where r_score is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.997773 [debug] [Thread-4 (]: Failed to rollback 'test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd'
+[0m21:35:55.998291 [debug] [Thread-4 (]: On test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd: Close
+[0m21:35:55.999025 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:35:55.999394 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:35:55.999965 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m21:35:56.000319 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_mart_rfm_segment.c08e944328"
+[0m21:35:56.001471 [debug] [Thread-1 (]: On test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b: ROLLBACK
+[0m21:35:56.001885 [debug] [Thread-3 (]: On test.retail_analytics.not_null_mart_rfm_segment.c08e944328: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_mart_rfm_segment.c08e944328"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select segment
+from "analytics"."marts"."mart_rfm"
+where segment is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:55.998770 [info ] [Thread-4 (]: 13 of 26 PASS not_null_mart_daily_revenue_revenue_date ......................... [[32mPASS[0m in 0.04s]
+[0m21:35:56.003250 [debug] [Thread-2 (]: On test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c: ROLLBACK
+[0m21:35:56.003898 [debug] [Thread-1 (]: Failed to rollback 'test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b'
+[0m21:35:56.004512 [debug] [Thread-4 (]: Finished running node test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd
+[0m21:35:56.005084 [debug] [Thread-2 (]: Failed to rollback 'test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c'
+[0m21:35:56.005510 [debug] [Thread-1 (]: On test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b: Close
+[0m21:35:56.005969 [debug] [Thread-4 (]: Began running node test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf
+[0m21:35:56.006303 [debug] [Thread-2 (]: On test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c: Close
+[0m21:35:56.007657 [info ] [Thread-1 (]: 14 of 26 PASS not_null_mart_rfm_customer_id .................................... [[32mPASS[0m in 0.05s]
+[0m21:35:56.007203 [info ] [Thread-4 (]: 17 of 26 START test not_null_stg_transactions_customer_id ...................... [RUN]
+[0m21:35:56.006744 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:35:56.008331 [info ] [Thread-2 (]: 15 of 26 PASS not_null_mart_rfm_r_score ........................................ [[32mPASS[0m in 0.04s]
+[0m21:35:56.008840 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b
+[0m21:35:56.009267 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_mart_daily_revenue_revenue_date.ebe84e1dfd, now test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf)
+[0m21:35:56.009860 [debug] [Thread-2 (]: Finished running node test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c
+[0m21:35:56.010968 [debug] [Thread-3 (]: On test.retail_analytics.not_null_mart_rfm_segment.c08e944328: ROLLBACK
+[0m21:35:56.011351 [debug] [Thread-1 (]: Began running node test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d
+[0m21:35:56.011789 [debug] [Thread-4 (]: Began compiling node test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf
+[0m21:35:56.012228 [debug] [Thread-2 (]: Began running node test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5
+[0m21:35:56.012899 [info ] [Thread-1 (]: 18 of 26 START test not_null_stg_transactions_invoice_date ..................... [RUN]
+[0m21:35:56.013514 [debug] [Thread-3 (]: Failed to rollback 'test.retail_analytics.not_null_mart_rfm_segment.c08e944328'
+[0m21:35:56.016362 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf"
+[0m21:35:56.016754 [info ] [Thread-2 (]: 19 of 26 START test not_null_stg_transactions_invoice_id ....................... [RUN]
+[0m21:35:56.017257 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_mart_rfm_customer_id.4cb6b9e31b, now test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d)
+[0m21:35:56.017685 [debug] [Thread-3 (]: On test.retail_analytics.not_null_mart_rfm_segment.c08e944328: Close
+[0m21:35:56.018237 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_mart_rfm_r_score.b7d9c3c25c, now test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5)
+[0m21:35:56.018597 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d
+[0m21:35:56.019207 [info ] [Thread-3 (]: 16 of 26 PASS not_null_mart_rfm_segment ........................................ [[32mPASS[0m in 0.05s]
+[0m21:35:56.019633 [debug] [Thread-4 (]: Began executing node test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf
+[0m21:35:56.020001 [debug] [Thread-2 (]: Began compiling node test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5
+[0m21:35:56.026685 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d"
+[0m21:35:56.027360 [debug] [Thread-3 (]: Finished running node test.retail_analytics.not_null_mart_rfm_segment.c08e944328
+[0m21:35:56.028864 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf"
+[0m21:35:56.032004 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5"
+[0m21:35:56.032571 [debug] [Thread-3 (]: Began running node test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201
+[0m21:35:56.033089 [debug] [Thread-1 (]: Began executing node test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d
+[0m21:35:56.033708 [info ] [Thread-3 (]: 20 of 26 START test not_null_stg_transactions_line_revenue ..................... [RUN]
+[0m21:35:56.035313 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d"
+[0m21:35:56.035988 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf"
+[0m21:35:56.036478 [debug] [Thread-2 (]: Began executing node test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5
+[0m21:35:56.037002 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_mart_rfm_segment.c08e944328, now test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201)
+[0m21:35:56.037494 [debug] [Thread-4 (]: On test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf: BEGIN
+[0m21:35:56.039099 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5"
+[0m21:35:56.039680 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d"
+[0m21:35:56.040154 [debug] [Thread-3 (]: Began compiling node test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201
+[0m21:35:56.040560 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:35:56.041031 [debug] [Thread-1 (]: On test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d: BEGIN
+[0m21:35:56.043991 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201"
+[0m21:35:56.044530 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5"
+[0m21:35:56.045154 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:56.045687 [debug] [Thread-2 (]: On test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5: BEGIN
+[0m21:35:56.046108 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m21:35:56.046795 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:56.047277 [debug] [Thread-3 (]: Began executing node test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201
+[0m21:35:56.047673 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf"
+[0m21:35:56.048258 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:35:56.049806 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201"
+[0m21:35:56.050275 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m21:35:56.050672 [debug] [Thread-4 (]: On test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "analytics"."staging"."stg_transactions"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.051124 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d"
+[0m21:35:56.051691 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5"
+[0m21:35:56.052165 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201"
+[0m21:35:56.052766 [debug] [Thread-1 (]: On test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select invoice_date
+from "analytics"."staging"."stg_transactions"
+where invoice_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.053227 [debug] [Thread-2 (]: On test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select invoice_id
+from "analytics"."staging"."stg_transactions"
+where invoice_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.053686 [debug] [Thread-3 (]: On test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201: BEGIN
+[0m21:35:56.054158 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:35:56.054943 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:35:56.056438 [debug] [Thread-4 (]: On test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf: ROLLBACK
+[0m21:35:56.056817 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:35:56.057457 [debug] [Thread-4 (]: Failed to rollback 'test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf'
+[0m21:35:56.057915 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m21:35:56.058359 [debug] [Thread-4 (]: On test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf: Close
+[0m21:35:56.059664 [debug] [Thread-1 (]: On test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d: ROLLBACK
+[0m21:35:56.060123 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m21:35:56.060933 [debug] [Thread-1 (]: Failed to rollback 'test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d'
+[0m21:35:56.061837 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201"
+[0m21:35:56.063115 [debug] [Thread-2 (]: On test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5: ROLLBACK
+[0m21:35:56.061476 [info ] [Thread-4 (]: 17 of 26 PASS not_null_stg_transactions_customer_id ............................ [[32mPASS[0m in 0.05s]
+[0m21:35:56.063729 [debug] [Thread-1 (]: On test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d: Close
+[0m21:35:56.064156 [debug] [Thread-3 (]: On test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select line_revenue
+from "analytics"."staging"."stg_transactions"
+where line_revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.064895 [debug] [Thread-2 (]: Failed to rollback 'test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5'
+[0m21:35:56.065476 [debug] [Thread-4 (]: Finished running node test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf
+[0m21:35:56.066198 [info ] [Thread-1 (]: 18 of 26 PASS not_null_stg_transactions_invoice_date ........................... [[32mPASS[0m in 0.05s]
+[0m21:35:56.066863 [debug] [Thread-2 (]: On test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5: Close
+[0m21:35:56.067337 [debug] [Thread-4 (]: Began running node test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad
+[0m21:35:56.067967 [debug] [Thread-1 (]: Finished running node test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d
+[0m21:35:56.068478 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:35:56.069839 [debug] [Thread-1 (]: Began running node test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4
+[0m21:35:56.068930 [info ] [Thread-4 (]: 21 of 26 START test not_null_stg_transactions_quantity ......................... [RUN]
+[0m21:35:56.069408 [info ] [Thread-2 (]: 19 of 26 PASS not_null_stg_transactions_invoice_id ............................. [[32mPASS[0m in 0.05s]
+[0m21:35:56.070893 [info ] [Thread-1 (]: 22 of 26 START test relationships_fct_orders_customer_id__customer_id__ref_dim_customers_  [RUN]
+[0m21:35:56.072232 [debug] [Thread-3 (]: On test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201: ROLLBACK
+[0m21:35:56.072784 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_stg_transactions_customer_id.ea7b0d99bf, now test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad)
+[0m21:35:56.073345 [debug] [Thread-2 (]: Finished running node test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5
+[0m21:35:56.073815 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_stg_transactions_invoice_date.9b1ecb2b4d, now test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4)
+[0m21:35:56.074590 [debug] [Thread-3 (]: Failed to rollback 'test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201'
+[0m21:35:56.075036 [debug] [Thread-4 (]: Began compiling node test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad
+[0m21:35:56.075416 [debug] [Thread-2 (]: Began running node test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd
+[0m21:35:56.075772 [debug] [Thread-1 (]: Began compiling node test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4
+[0m21:35:56.076269 [debug] [Thread-3 (]: On test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201: Close
+[0m21:35:56.079245 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad"
+[0m21:35:56.079766 [info ] [Thread-2 (]: 23 of 26 START test unique_dim_customers_customer_id ........................... [RUN]
+[0m21:35:56.087075 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4"
+[0m21:35:56.087758 [info ] [Thread-3 (]: 20 of 26 PASS not_null_stg_transactions_line_revenue ........................... [[32mPASS[0m in 0.05s]
+[0m21:35:56.088450 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_stg_transactions_invoice_id.47dd75acd5, now test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m21:35:56.089224 [debug] [Thread-3 (]: Finished running node test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201
+[0m21:35:56.089651 [debug] [Thread-4 (]: Began executing node test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad
+[0m21:35:56.090269 [debug] [Thread-2 (]: Began compiling node test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd
+[0m21:35:56.090719 [debug] [Thread-1 (]: Began executing node test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4
+[0m21:35:56.091223 [debug] [Thread-3 (]: Began running node test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5
+[0m21:35:56.093067 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad"
+[0m21:35:56.099484 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m21:35:56.101107 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4"
+[0m21:35:56.101552 [info ] [Thread-3 (]: 24 of 26 START test unique_fct_orders_order_id ................................. [RUN]
+[0m21:35:56.102431 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_stg_transactions_line_revenue.b1b2075201, now test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5)
+[0m21:35:56.102733 [debug] [Thread-3 (]: Began compiling node test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5
+[0m21:35:56.105366 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5"
+[0m21:35:56.105881 [debug] [Thread-2 (]: Began executing node test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd
+[0m21:35:56.106450 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad"
+[0m21:35:56.108439 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m21:35:56.108907 [debug] [Thread-4 (]: On test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad: BEGIN
+[0m21:35:56.109368 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4"
+[0m21:35:56.109799 [debug] [Thread-3 (]: Began executing node test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5
+[0m21:35:56.110297 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:35:56.110700 [debug] [Thread-1 (]: On test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4: BEGIN
+[0m21:35:56.112263 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5"
+[0m21:35:56.112700 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m21:35:56.113328 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:35:56.113824 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m21:35:56.114292 [debug] [Thread-2 (]: On test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd: BEGIN
+[0m21:35:56.114900 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad"
+[0m21:35:56.115328 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5"
+[0m21:35:56.115707 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:56.116090 [debug] [Thread-4 (]: On test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quantity
+from "analytics"."staging"."stg_transactions"
+where quantity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.116471 [debug] [Thread-3 (]: On test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5: BEGIN
+[0m21:35:56.116845 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:35:56.117585 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:35:56.118019 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:35:56.118382 [debug] [Thread-1 (]: Using duckdb connection "test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4"
+[0m21:35:56.118950 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m21:35:56.119449 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:35:56.119924 [debug] [Thread-1 (]: On test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from "analytics"."marts"."fct_orders"
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from "analytics"."marts"."dim_customers"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.120284 [debug] [Thread-2 (]: On test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "analytics"."marts"."dim_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.120663 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m21:35:56.123405 [debug] [Thread-3 (]: Using duckdb connection "test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5"
+[0m21:35:56.122887 [debug] [Thread-4 (]: On test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad: ROLLBACK
+[0m21:35:56.123847 [debug] [Thread-3 (]: On test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "analytics"."marts"."fct_orders"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.124603 [debug] [Thread-4 (]: Failed to rollback 'test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad'
+[0m21:35:56.125222 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m21:35:56.125654 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m21:35:56.126083 [debug] [Thread-4 (]: On test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad: Close
+[0m21:35:56.127649 [debug] [Thread-2 (]: On test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd: ROLLBACK
+[0m21:35:56.128978 [debug] [Thread-1 (]: On test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4: ROLLBACK
+[0m21:35:56.129608 [debug] [Thread-2 (]: Failed to rollback 'test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd'
+[0m21:35:56.130216 [info ] [Thread-4 (]: 21 of 26 PASS not_null_stg_transactions_quantity ............................... [[32mPASS[0m in 0.06s]
+[0m21:35:56.130608 [debug] [Thread-2 (]: On test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd: Close
+[0m21:35:56.131127 [debug] [Thread-1 (]: Failed to rollback 'test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4'
+[0m21:35:56.131586 [debug] [Thread-3 (]: SQL status: OK in 0.007 seconds
+[0m21:35:56.132128 [debug] [Thread-4 (]: Finished running node test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad
+[0m21:35:56.132545 [debug] [Thread-1 (]: On test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4: Close
+[0m21:35:56.133104 [info ] [Thread-2 (]: 23 of 26 PASS unique_dim_customers_customer_id ................................. [[32mPASS[0m in 0.04s]
+[0m21:35:56.133799 [debug] [Thread-4 (]: Began running node test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185
+[0m21:35:56.135292 [debug] [Thread-3 (]: On test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5: ROLLBACK
+[0m21:35:56.135910 [debug] [Thread-2 (]: Finished running node test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd
+[0m21:35:56.136553 [info ] [Thread-1 (]: 22 of 26 PASS relationships_fct_orders_customer_id__customer_id__ref_dim_customers_  [[32mPASS[0m in 0.06s]
+[0m21:35:56.136919 [info ] [Thread-4 (]: 25 of 26 START test unique_mart_daily_revenue_revenue_date ..................... [RUN]
+[0m21:35:56.137803 [debug] [Thread-3 (]: Failed to rollback 'test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5'
+[0m21:35:56.138228 [debug] [Thread-2 (]: Began running node test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f
+[0m21:35:56.138759 [debug] [Thread-1 (]: Finished running node test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4
+[0m21:35:56.139145 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_analytics.not_null_stg_transactions_quantity.86c5a822ad, now test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185)
+[0m21:35:56.139501 [debug] [Thread-3 (]: On test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5: Close
+[0m21:35:56.139929 [info ] [Thread-2 (]: 26 of 26 START test unique_mart_rfm_customer_id ................................ [RUN]
+[0m21:35:56.140350 [debug] [Thread-4 (]: Began compiling node test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185
+[0m21:35:56.140847 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_analytics.unique_dim_customers_customer_id.15c9f1e2fd, now test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f)
+[0m21:35:56.141432 [info ] [Thread-3 (]: 24 of 26 PASS unique_fct_orders_order_id ....................................... [[32mPASS[0m in 0.04s]
+[0m21:35:56.144777 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185"
+[0m21:35:56.145163 [debug] [Thread-2 (]: Began compiling node test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f
+[0m21:35:56.145641 [debug] [Thread-3 (]: Finished running node test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5
+[0m21:35:56.149180 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f"
+[0m21:35:56.149792 [debug] [Thread-4 (]: Began executing node test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185
+[0m21:35:56.151445 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185"
+[0m21:35:56.151861 [debug] [Thread-2 (]: Began executing node test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f
+[0m21:35:56.153697 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f"
+[0m21:35:56.154265 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f"
+[0m21:35:56.154556 [debug] [Thread-2 (]: On test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f: BEGIN
+[0m21:35:56.154796 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:35:56.155332 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185"
+[0m21:35:56.155701 [debug] [Thread-4 (]: On test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185: BEGIN
+[0m21:35:56.156015 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:35:56.156326 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:35:56.156796 [debug] [Thread-2 (]: Using duckdb connection "test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f"
+[0m21:35:56.157060 [debug] [Thread-2 (]: On test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "analytics"."marts"."mart_rfm"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.157514 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:35:56.157909 [debug] [Thread-4 (]: Using duckdb connection "test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185"
+[0m21:35:56.158179 [debug] [Thread-4 (]: On test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185: /* {"app": "dbt", "dbt_version": "1.9.11", "profile_name": "retail_analytics", "target_name": "dev", "node_id": "test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    revenue_date as unique_field,
+    count(*) as n_records
+
+from "analytics"."marts"."mart_daily_revenue"
+where revenue_date is not null
+group by revenue_date
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:35:56.159265 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:35:56.159704 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:35:56.160994 [debug] [Thread-2 (]: On test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f: ROLLBACK
+[0m21:35:56.162293 [debug] [Thread-4 (]: On test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185: ROLLBACK
+[0m21:35:56.162902 [debug] [Thread-2 (]: Failed to rollback 'test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f'
+[0m21:35:56.163540 [debug] [Thread-4 (]: Failed to rollback 'test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185'
+[0m21:35:56.163882 [debug] [Thread-2 (]: On test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f: Close
+[0m21:35:56.164328 [debug] [Thread-4 (]: On test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185: Close
+[0m21:35:56.164964 [info ] [Thread-4 (]: 25 of 26 PASS unique_mart_daily_revenue_revenue_date ........................... [[32mPASS[0m in 0.03s]
+[0m21:35:56.165555 [info ] [Thread-2 (]: 26 of 26 PASS unique_mart_rfm_customer_id ...................................... [[32mPASS[0m in 0.02s]
+[0m21:35:56.166069 [debug] [Thread-4 (]: Finished running node test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185
+[0m21:35:56.166625 [debug] [Thread-2 (]: Finished running node test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f
+[0m21:35:56.168399 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:35:56.168705 [debug] [MainThread]: On master: BEGIN
+[0m21:35:56.168925 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:35:56.169418 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:35:56.169668 [debug] [MainThread]: On master: COMMIT
+[0m21:35:56.169899 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:35:56.170086 [debug] [MainThread]: On master: COMMIT
+[0m21:35:56.170481 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:35:56.170719 [debug] [MainThread]: On master: Close
+[0m21:35:56.171009 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:35:56.171195 [debug] [MainThread]: Connection 'test.retail_analytics.unique_mart_rfm_customer_id.e64afd5d1f' was properly closed.
+[0m21:35:56.171382 [debug] [MainThread]: Connection 'test.retail_analytics.relationships_fct_orders_customer_id__customer_id__ref_dim_customers_.d5636051d4' was properly closed.
+[0m21:35:56.171544 [debug] [MainThread]: Connection 'test.retail_analytics.unique_fct_orders_order_id.523ddb6ce5' was properly closed.
+[0m21:35:56.171710 [debug] [MainThread]: Connection 'test.retail_analytics.unique_mart_daily_revenue_revenue_date.736d5fb185' was properly closed.
+[0m21:35:56.171965 [info ] [MainThread]: 
+[0m21:35:56.172228 [info ] [MainThread]: Finished running 26 data tests in 0 hours 0 minutes and 0.55 seconds (0.55s).
+[0m21:35:56.174671 [debug] [MainThread]: Command end result
+[0m21:35:56.193872 [debug] [MainThread]: Wrote artifact WritableManifest to ./target/manifest.json
+[0m21:35:56.195586 [debug] [MainThread]: Wrote artifact SemanticManifest to ./target/semantic_manifest.json
+[0m21:35:56.202172 [debug] [MainThread]: Wrote artifact RunExecutionResult to ./target/run_results.json
+[0m21:35:56.202472 [info ] [MainThread]: 
+[0m21:35:56.202751 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:35:56.203018 [info ] [MainThread]: 
+[0m21:35:56.203282 [info ] [MainThread]: Done. PASS=26 WARN=0 ERROR=0 SKIP=0 TOTAL=26
+[0m21:35:56.204139 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.1040814, "process_in_blocks": "0", "process_kernel_time": 0.156399, "process_mem_max_rss": "163816", "process_out_blocks": "2944", "process_user_time": 2.025474}
+[0m21:35:56.204542 [debug] [MainThread]: Command `dbt test` succeeded at 21:35:56.204460 after 1.10 seconds
+[0m21:35:56.204834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f40351020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f3e784690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f486b6b70>]}
+[0m21:35:56.205115 [debug] [MainThread]: Flushing usage events
+[0m21:35:56.581641 [debug] [MainThread]: An error was encountered while trying to flush usage events
