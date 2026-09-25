@@ -1,0 +1,79 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: Order-level fact table (invoice grain) with revenue and item counts.
+    columns:
+      - name: order_id
+        description: Surrogate business key = invoice_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+      - name: order_date
+        tests:
+          - not_null
+      - name: order_revenue
+        tests:
+          - not_null
+      - name: country
+        tests:
+          - not_null
+
+  - name: dim_customers
+    description: Customer dimension with lifetime order stats.
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: frequency
+        tests:
+          - not_null
+      - name: monetary
+        tests:
+          - not_null
+      - name: first_order_date
+        tests:
+          - not_null
+
+  - name: mart_daily_revenue
+    description: Daily revenue reporting mart.
+    columns:
+      - name: revenue_date
+        tests:
+          - unique
+          - not_null
+      - name: daily_revenue
+        tests:
+          - not_null
+
+  - name: mart_rfm
+    description: RFM scores and rule-based segments computed in dbt (not imported from project 01).
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: segment
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - Champions
+                - Loyal
+                - At Risk
+                - Hibernating
+                - Need Attention
+                - New / Promising
+                - Big Spenders
+      - name: r_score
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
