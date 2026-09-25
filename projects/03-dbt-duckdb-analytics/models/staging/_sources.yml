@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: retail_raw
+    description: >
+      Local DuckDB landing zone seeded from project 01 processed parquet
+      (UCI Online Retail cleaned transactions). Portfolio warehouse seed —
+      not a live production warehouse.
+    schema: raw
+    tables:
+      - name: transactions_clean
+        description: >
+          Line-level cleaned retail transactions (cancellations / null CustomerID removed
+          upstream in project 01). Columns mirror 01-online-retail-rfm outputs.
+        columns:
+          - name: InvoiceNo
+            description: Invoice / order identifier
+          - name: StockCode
+          - name: Description
+          - name: Quantity
+          - name: InvoiceDate
+          - name: UnitPrice
+          - name: CustomerID
+          - name: Country
+          - name: line_revenue
+      - name: rfm_segments
+        description: Optional RFM table from project 01 (reference only; mart_rfm recomputes in dbt).
