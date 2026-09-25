@@ -1,0 +1,182 @@
+{
+  "generated_at_utc": "2026-09-25T19:33:16.892334+00:00",
+  "dataset": {
+    "name": "NYC TLC Yellow Taxi Trip Records",
+    "source_page": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+    "citation": "NYC Taxi & Limousine Commission. TLC Trip Record Data. https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+    "license": "NYC Open Data / TLC public trip records (see TLC Trip Record Data page Terms)",
+    "sample_months": [
+      "2024-01",
+      "2024-02"
+    ],
+    "n_clean_trips": 5826753,
+    "n_pickup_zones": 261,
+    "date_min": "2024-01-01 00:00:00",
+    "date_max": "2024-02-29 23:59:58",
+    "total_revenue_usd": 159691765.81,
+    "mean_fare_usd": 18.62484414561592
+  },
+  "eda": {
+    "n_citywide_hours": 1440,
+    "n_zone_hour_rows": 151586,
+    "mean_trips_per_hour": 4046.35625,
+    "median_trips_per_hour": 4706.0,
+    "mean_revenue_per_hour_usd": 110897.05959027779,
+    "trips_by_hour_of_day_mean": {
+      "0": 2613.0,
+      "1": 1780.8,
+      "2": 1224.1,
+      "3": 799.8,
+      "4": 545.7,
+      "5": 593.4,
+      "6": 1335.8,
+      "7": 2747.7,
+      "8": 3861.8,
+      "9": 4202.6,
+      "10": 4469.3,
+      "11": 4806.1,
+      "12": 5238.5,
+      "13": 5400.8,
+      "14": 5800.6,
+      "15": 5998.8,
+      "16": 6107.3,
+      "17": 6720.1,
+      "18": 7122.0,
+      "19": 6180.3,
+      "20": 5416.2,
+      "21": 5436.5,
+      "22": 4909.2,
+      "23": 3802.3
+    },
+    "trips_by_day_of_week_mean": {
+      "0": 3391.3,
+      "1": 3844.9,
+      "2": 4231.4,
+      "3": 4614.5,
+      "4": 4231.0,
+      "5": 4403.5,
+      "6": 3620.9
+    },
+    "top_pickup_zones": [
+      {
+        "location_id": 161,
+        "zone_name": "Midtown Center",
+        "borough": "Manhattan",
+        "trip_count": 283685
+      },
+      {
+        "location_id": 237,
+        "zone_name": "Upper East Side South",
+        "borough": "Manhattan",
+        "trip_count": 277229
+      },
+      {
+        "location_id": 236,
+        "zone_name": "Upper East Side North",
+        "borough": "Manhattan",
+        "trip_count": 265053
+      },
+      {
+        "location_id": 132,
+        "zone_name": "JFK Airport",
+        "borough": "Queens",
+        "trip_count": 261914
+      },
+      {
+        "location_id": 162,
+        "zone_name": "Midtown East",
+        "borough": "Manhattan",
+        "trip_count": 207882
+      },
+      {
+        "location_id": 230,
+        "zone_name": "Times Sq/Theatre District",
+        "borough": "Manhattan",
+        "trip_count": 202947
+      },
+      {
+        "location_id": 186,
+        "zone_name": "Penn Station/Madison Sq West",
+        "borough": "Manhattan",
+        "trip_count": 199917
+      },
+      {
+        "location_id": 142,
+        "zone_name": "Lincoln Square East",
+        "borough": "Manhattan",
+        "trip_count": 196380
+      },
+      {
+        "location_id": 239,
+        "zone_name": "Upper West Side South",
+        "borough": "Manhattan",
+        "trip_count": 175221
+      },
+      {
+        "location_id": 138,
+        "zone_name": "LaGuardia Airport",
+        "borough": "Queens",
+        "trip_count": 173582
+      }
+    ]
+  },
+  "modeling": {
+    "target": "citywide_hourly_trip_count",
+    "hold_out_days": 7,
+    "cutoff": "2024-02-23 00:00:00",
+    "n_train_hours": 1104,
+    "n_test_hours": 168,
+    "feature_cols": [
+      "hour_of_day",
+      "day_of_week",
+      "is_weekend",
+      "lag_1h",
+      "lag_24h",
+      "lag_168h",
+      "roll_mean_24h"
+    ],
+    "demand_regression": [
+      {
+        "model": "seasonal_naive_hourofweek",
+        "task": "hourly_citywide_trip_count",
+        "n_test": 168,
+        "mae": 460.6672335600907,
+        "rmse": 859.405016563082,
+        "mape": 0.1034485204693196,
+        "y_mean": 4427.309523809524,
+        "y_median": 5048.0,
+        "y_std": 2628.0663042307565
+      },
+      {
+        "model": "ridge_regression",
+        "task": "hourly_citywide_trip_count",
+        "n_test": 168,
+        "mae": 490.57788160475366,
+        "rmse": 732.7437773311503,
+        "mape": 0.21582734910989185,
+        "y_mean": 4427.309523809524,
+        "y_median": 5048.0,
+        "y_std": 2628.0663042307565
+      },
+      {
+        "model": "random_forest_regressor",
+        "task": "hourly_citywide_trip_count",
+        "n_test": 168,
+        "mae": 371.113179843935,
+        "rmse": 699.4680042913544,
+        "mape": 0.11895896980487923,
+        "y_mean": 4427.309523809524,
+        "y_median": 5048.0,
+        "y_std": 2628.0663042307565
+      }
+    ],
+    "best_model_by_mae": "random_forest_regressor",
+    "best_mae": 371.113179843935
+  },
+  "notes": [
+    "Metrics from a real local run on NYC TLC yellow trip parquet (sample months only).",
+    "Temporal hold-out: last HOLD_OUT_DAYS; lag features use only past hours.",
+    "Seasonal naive uses hour-of-week means fit on the train window only.",
+    "No invented business outcomes; figures are reproducible via scripts/run_all.sh."
+  ]
+}
