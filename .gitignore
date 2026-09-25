@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/raw/
+data/processed/
+*.parquet
+*.xlsx
+*.csv
+target/
+dbt_packages/
+*.duckdb
+.DS_Store
