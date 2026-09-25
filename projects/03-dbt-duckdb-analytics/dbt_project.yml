@@ -1,0 +1,33 @@
+# Portfolio practice: dbt + DuckDB analytics warehouse on UCI Online Retail seed.
+name: retail_analytics
+version: "1.0.0"
+config-version: 2
+profile: retail_analytics
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - target
+  - dbt_packages
+  - logs
+
+models:
+  retail_analytics:
+    staging:
+      +materialized: view
+      +schema: staging
+    intermediate:
+      +materialized: view
+      +schema: intermediate
+    marts:
+      +materialized: table
+      +schema: marts
+
+vars:
+  # Snapshot date for RFM recency (end of dataset window in seed)
+  rfm_as_of_date: "2011-12-09"

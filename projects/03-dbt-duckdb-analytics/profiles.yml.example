@@ -1,0 +1,10 @@
+# Copy to profiles.yml in this project root (or ~/.dbt/) before `dbt run`.
+# run_all.sh writes profiles.yml automatically for the local warehouse path.
+retail_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "data/warehouse/analytics.duckdb"
+      threads: 4
+      schema: main

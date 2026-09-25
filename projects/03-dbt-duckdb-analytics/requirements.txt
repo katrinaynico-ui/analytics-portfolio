@@ -1,0 +1,7 @@
+dbt-core>=1.8,<1.10
+dbt-duckdb>=1.8,<1.10
+duckdb>=0.9
+pandas>=2.0
+pyarrow>=14.0
+plotly>=5.18
+streamlit>=1.28
