@@ -1,0 +1,114 @@
+{
+  "generated_at_utc": "2026-09-25T19:30:10.084235+00:00",
+  "dataset": {
+    "name": "UCI Online Retail",
+    "doi": "https://doi.org/10.24432/C5BW33",
+    "citation": "Chen, D. (2015). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "n_clean_rows": 397884,
+    "n_customers": 4338,
+    "date_min": "2010-12-01 08:26:00",
+    "date_max": "2011-12-09 12:50:00",
+    "total_revenue": 8911407.904
+  },
+  "rfm": {
+    "n_customers": 4338,
+    "segment_counts": {
+      "Hibernating": 1065,
+      "Champions": 962,
+      "Loyal": 758,
+      "At Risk": 643,
+      "Need Attention": 553,
+      "New / Promising": 319,
+      "Big Spenders": 38
+    },
+    "monetary_median": 674.485,
+    "frequency_median": 2.0,
+    "recency_median_days": 51.0
+  },
+  "cohorts": {
+    "n_cohort_months": 13,
+    "avg_retention_month_0": 1.0,
+    "avg_retention_month_1": 0.20622500000000002,
+    "avg_retention_month_3": 0.23243999999999998
+  },
+  "modeling": {
+    "hold_out_days": 90,
+    "cutoff": "2011-09-10 12:50:00",
+    "holdout_end": "2011-12-10 12:50:00",
+    "n_customers_modeled": 3370,
+    "repurchase_rate": 0.5700296735905045,
+    "classification": [
+      {
+        "model": "rule_baseline",
+        "task": "repurchase_classification",
+        "n_test": 843,
+        "positive_rate_test": 0.5705812574139977,
+        "accuracy": 0.6263345195729537,
+        "precision": 0.782312925170068,
+        "recall": 0.4781704781704782,
+        "f1": 0.5935483870967742,
+        "roc_auc": 0.715527044256326,
+        "average_precision": 0.767336904557033
+      },
+      {
+        "model": "logistic_regression",
+        "task": "repurchase_classification",
+        "n_test": 843,
+        "positive_rate_test": 0.5705812574139977,
+        "accuracy": 0.6595492289442467,
+        "precision": 0.7650273224043715,
+        "recall": 0.5821205821205822,
+        "f1": 0.6611570247933884,
+        "roc_auc": 0.7259852287476596,
+        "average_precision": 0.7954074730210798
+      },
+      {
+        "model": "random_forest",
+        "task": "repurchase_classification",
+        "n_test": 843,
+        "positive_rate_test": 0.5705812574139977,
+        "accuracy": 0.6725978647686833,
+        "precision": 0.7608142493638677,
+        "recall": 0.6216216216216216,
+        "f1": 0.6842105263157895,
+        "roc_auc": 0.7363170650463468,
+        "average_precision": 0.8046461236042539
+      }
+    ],
+    "regression": [
+      {
+        "model": "mean_baseline",
+        "task": "future_monetary_regression",
+        "n_test": 843,
+        "mae": 1187.8607723922091,
+        "rmse": 7234.8768337917945,
+        "y_mean": 1010.3702491103203,
+        "y_median": 167.63
+      },
+      {
+        "model": "ridge_regression",
+        "task": "future_monetary_regression",
+        "n_test": 843,
+        "mae": 955.3364514110384,
+        "rmse": 6553.949638631771,
+        "y_mean": 1010.3702491103203,
+        "y_median": 167.63
+      },
+      {
+        "model": "random_forest_regressor",
+        "task": "future_monetary_regression",
+        "n_test": 843,
+        "mae": 909.3335056499118,
+        "rmse": 6676.830966635021,
+        "y_mean": 1010.3702491103203,
+        "y_median": 167.63
+      }
+    ]
+  },
+  "notes": [
+    "Metrics from a real local run on the UCI Online Retail file.",
+    "Temporal split: features before cutoff; labels in the following hold-out window.",
+    "No invented business outcomes; figures are reproducible via scripts/run_all.sh."
+  ]
+}
