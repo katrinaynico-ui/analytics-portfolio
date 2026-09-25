@@ -1,0 +1,67 @@
+{
+  "generated_at_utc": "2026-09-25T19:35:56.938952+00:00",
+  "project": "03-dbt-duckdb-analytics",
+  "framing": "Portfolio practice: dbt + DuckDB warehouse modeling on UCI Online Retail seeded from project 01 processed parquet. Not a client engagement.",
+  "data_seed": {
+    "source": "01-online-retail-rfm/data/processed/transactions_clean.parquet",
+    "dataset": "UCI Online Retail",
+    "doi": "https://doi.org/10.24432/C5BW33",
+    "license": "CC BY 4.0",
+    "citation": "Chen, D. (2015). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33"
+  },
+  "warehouse_path": "data/warehouse/analytics.duckdb",
+  "models": [
+    "dim_customers",
+    "fct_orders",
+    "int_customer_order_stats",
+    "int_orders",
+    "mart_daily_revenue",
+    "mart_rfm",
+    "stg_transactions"
+  ],
+  "row_counts": {
+    "marts.dim_customers": 4338,
+    "marts.fct_orders": 18532,
+    "marts.mart_daily_revenue": 305,
+    "marts.mart_rfm": 4338,
+    "raw.transactions_clean": 397884,
+    "intermediate.int_customer_order_stats": 4338,
+    "intermediate.int_orders": 18532,
+    "staging.stg_transactions": 397884
+  },
+  "kpis": {
+    "orders": {
+      "n_orders": 18532,
+      "n_customers_with_orders": 4338,
+      "total_revenue": 8911407.9,
+      "date_min": "2010-12-01",
+      "date_max": "2011-12-09"
+    },
+    "n_customers_dim": 4338,
+    "daily_revenue": {
+      "n_days": 305,
+      "total_revenue": 8911407.9,
+      "avg_daily_revenue": 29217.73
+    },
+    "rfm_segment_counts": {
+      "Need Attention": 1079,
+      "Hibernating": 989,
+      "Champions": 904,
+      "At Risk": 526,
+      "Loyal": 423,
+      "New / Promising": 412,
+      "Big Spenders": 5
+    }
+  },
+  "dbt_tests": {
+    "total": 26,
+    "passed": 26,
+    "failed": 0,
+    "exit_code": null
+  },
+  "notes": [
+    "Seed reuses cleaned parquet from project 01 (no re-download of UCI Excel).",
+    "Models follow staging \u2192 intermediate \u2192 marts.",
+    "Metrics from a real local dbt run; no invented business outcomes."
+  ]
+}
